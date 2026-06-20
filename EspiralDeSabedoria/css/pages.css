@@ -1,0 +1,244 @@
+/* ==========================================================================
+   PAGES.CSS
+   Layout específico de cada seção da página
+   ========================================================================== */
+
+/* ---------- Hero ---------- */
+#hero {
+    background-color: var(--color-bg);
+    padding-top: var(--space-sm);
+}
+
+#hero .container {
+    padding-block: var(--space-md) var(--space-xl);
+}
+
+.hero__grid {
+    grid-template-columns: 1fr 1.25fr;
+}
+
+.hero__texto {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.titulo-display {
+    font-size: var(--fs-display);
+    line-height: 1.18;
+}
+
+.hero__paragrafo {
+    max-width: 46ch;
+    color: var(--color-text);
+}
+
+.hero__acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-top: var(--space-xs);
+}
+
+.hero__imagem .imagem-moldura {
+    aspect-ratio: 5 / 4;
+}
+
+@media (max-width: 760px) {
+    #hero{
+        min-height: 100vh;
+        align-content: center;
+    }
+
+    .hero__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__imagem {
+        display: none;
+        }
+}
+
+/* ---------- Sobre mim ---------- */
+#sobre {
+    background-color: var(--color-light-accent);
+}
+
+#sobre .container {
+    position: relative;
+}
+
+.sobre__grid {
+    grid-template-columns: 1fr 1.3fr;
+    position: relative;
+    z-index: 2;
+}
+
+.sobre__imagem .imagem-moldura {
+    aspect-ratio: 4 / 3.4;
+}
+
+.sobre__texto {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    z-index: 20;
+}
+
+.sobre__texto p + p {
+    margin-top: -0.5rem;
+}
+
+.sobre__texto .botao {
+    align-self: flex-start;
+    margin-top: var(--space-2xs);
+}
+
+.decor-folha--sobre {
+    top: 80px;
+    right: -3%;
+    width: 220px;
+    height: 440px;
+}
+
+#sobre .botao--primario {
+    box-shadow: none;
+}
+
+#sobre .imagem-moldura {
+    box-shadow: none;
+}
+
+@media (max-width: 1024px) {
+    .decor-folha--sobre {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .sobre__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre__imagem{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+/* ---------- Terapias ---------- */
+#terapias {
+    background-color: var(--color-bg);
+}
+
+.card-terapia {
+    transition: var(--transition-base);
+}
+
+/* ---------- Cursos / Formação ---------- */
+#cursos {
+    background-color: var(--color-bg);
+}
+
+.cursos__grid {
+    grid-template-columns: 1.3fr 1fr;
+}
+
+.cursos__imagem .imagem-moldura {
+    aspect-ratio: 16 / 9;
+}
+
+.cursos__texto {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.cursos__texto .botao {
+    align-self: flex-start;
+    margin-top: var(--space-2xs);
+}
+
+@media (max-width: 760px) {
+    .cursos__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cursos__imagem {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cursos__imagem .imagem-moldura{
+        height: 400px;
+        width: 500px;
+    }
+}
+
+/* ---------- Perguntas frequentes ---------- */
+#faq {
+    background-color: var(--color-bg-alt);
+}
+
+/* ---------- Depoimentos e agendamento ---------- */
+#depoimentos {
+    background-color: var(--color-bg);
+}
+
+.depoimentos__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-md);
+    align-items: stretch;
+}
+
+.depoimentos__imagem .imagem-moldura {
+    height: 100%;
+    aspect-ratio: 4 / 5;
+}
+
+@media (max-width: 1024px) {
+    .depoimentos__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .depoimentos__imagem {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .depoimentos__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----------- Agendamentos ------------- */
+
+#agendamentos {
+    display: flex;
+    flex-direction: row;
+    min-height: 80vh;
+}
+
+#agendamentos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+/* ---------- Ondas de transição entre seções ---------- */
+#hero .onda--base {
+    color: var(--color-bg-alt);
+}
+
+#sobre .onda--base {
+    color: var(--color-light-accent);
+}
+
+#depoimentos .onda--base {
+    color: var(--color-footer-bg);
+}

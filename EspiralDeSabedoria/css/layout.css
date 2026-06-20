@@ -1,0 +1,287 @@
+/* ==========================================================================
+   LAYOUT.CSS
+   Estrutura geral: seções, containers, grids, cabeçalho e rodapé.
+
+   Observação sobre a adaptação do kit original:
+   - As regras `.section { min-height: 100vh }` e `.container { min-height: 100vh }`
+     foram ajustadas. O layout do protótipo é uma landing page de fluxo contínuo
+     (com seções de alturas variadas), não um conjunto de "slides" de tela cheia.
+     Por isso o min-height fixo foi substituído por espaçamento vertical
+     (--space-xl) e cada seção cresce conforme o conteúdo.
+   - A animação de entrada (.container / .container.active) foi mantida.
+   ========================================================================== */
+
+/* ---------- Seções ---------- */
+.section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+[id] {
+    scroll-margin-top: var(--header-height);
+}
+
+.section--alt {
+    background-color: var(--color-bg-alt);
+}
+
+.section--accent {
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
+}
+
+/* ---------- Container ---------- */
+.container {
+    max-width: var(--container-max);
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1.5rem;
+    padding-block: var(--space-xl);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: transform 0.6s ease, opacity 0.7s ease;
+    overflow: hidden;
+}
+
+.container.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* Container "cheio" usado no cabeçalho fixo (sem padding vertical grande) */
+.container-fluid {
+    max-width: var(--container-max);
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+}
+
+/* ---------- Grids ---------- */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    align-items: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-md);
+    justify-items: stretch;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+}
+
+@media (max-width: 1024px) {
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 760px) {
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .grid-2 {
+        gap: var(--space-lg);
+    }
+}
+
+/* ---------- Flex utilitários (mantidos do kit) ---------- */
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------- Cabeçalho fixo ---------- */
+.cabecalho {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(251, 247, 244, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid transparent;
+    transition: var(--transition-base);
+}
+
+.cabecalho.is-scrolled {
+    border-bottom-color: var(--color-border);
+    box-shadow: var(--shadow-soft);
+}
+
+.cabecalho__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm);
+    min-height: var(--header-height);
+    overflow: hidden;
+}
+
+@media (max-width: 370px) {
+    .cabecalho__inner {
+        gap: var(--space-2xs);
+        padding-inline: 0.75rem;
+    }
+
+    .marca__icone {
+        width: 32px;
+        height: 32px;
+    }
+
+    .marca__texto {
+        font-size: 1rem;
+    }
+}
+
+/* ---------- Menu de navegação ---------- */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu__lista {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.cabecalho__acoes {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-shrink: 0;
+}
+
+@media (max-width: 920px) {
+    .menu {
+        position: fixed;
+        inset: var(--header-height) 0 0 0;
+        background-color: var(--color-bg);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: var(--space-lg) var(--space-md);
+        transform: translateX(100%);
+        transition: transform 0.35s ease, display 0.35s ease;
+        /* garante z-index acima do conteúdo mas abaixo do header */
+        z-index: 99;    
+        display: none;
+    }
+
+    .menu.is-open {
+        transform: translateX(0);
+        height: 100vh;
+        display: flex;
+    }
+
+    .menu__lista {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-md);
+        width: 100%;
+    }
+
+    .menu__lista .menu__link {
+        font-size: var(--fs-h3);
+        /* area de toque maior em mobile */
+        padding-block: 0.6rem;
+        display: block;
+        width: 100%;
+    }
+
+    /* Separador visual entre os links e o seletor de idioma dentro do menu */
+    .menu__lista::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-border);
+        margin-top: var(--space-sm);
+    }
+}
+
+@media (max-width: 370px) {
+    .menu {
+        padding: var(--space-md) 0.75rem;
+    }
+
+    .menu.is-open { 
+        height: 100vh;
+    }
+
+    .menu__lista .menu__link {
+        font-size: 1.1rem;
+    }
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
+    padding-block: var(--space-xl) var(--space-md);
+}
+
+.rodape__grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: var(--space-md) var(--space-md);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.rodape__base {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-sm);
+    padding-top: var(--space-md);
+    font-size: var(--fs-small);
+    color: var(--color-footer-text);
+}
+
+@media (max-width: 1024px) {
+    .rodape__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 620px) {
+    .rodape__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .rodape__base {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,12 @@
+/* ==========================================================================
+   MAIN.CSS
+   Arquivo agregador — importa os demais módulos na ordem correta
+   (mesma ordem de importação definida no kit original)
+   ========================================================================== */
+
+@import url(./base.css);
+@import url(./variables.css);
+@import url(./layout.css);
+@import url(./utilities.css);
+@import url(./components.css);
+@import url(./pages.css);

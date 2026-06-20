@@ -1,0 +1,75 @@
+/* ==========================================================================
+VARIABLES.CSS
+Tokens de design do projeto "Espiral de Sabedoria"
+Paleta extraída do protótipo (Prototipo_LP_Anne_2.png)
+   ========================================================================== */
+
+:root {
+    /* ---------- Cores de fundo ---------- */
+    --color-bg: #F5EFEB;            /* Beige — fundo principal */
+    --color-bg-alt: #EDE7E2;        /* Beige escurecido — seções alternadas */
+    --color-surface: #F5F5F5;       /* White — cartões, inputs, formulários */
+
+    /* ---------- Cores de marca ---------- */
+    --color-primary: #2F4156;       /* Navy — títulos e textos de destaque */
+    --color-accent: #557C8D;        /* Teal — botões, links, ícones */
+    --color-light-accent: #CBD9E6;  /* Sky Blue — destaques suaves */
+    --color-accent-dark: #3D6070;   /* Teal escurecido — hover/estado ativo */
+    --color-accent-soft: #DDE8EF;   /* Sky Blue suavizado — fundo de ícones */
+    --color-gold: #D6B68A;          /* mantido — detalhe dourado do logo */
+
+    /* ---------- Cores de texto ---------- */
+    --color-text: #4A5260;          /* derivado do Navy — parágrafos */
+    --color-text-light: #F5F5F5;    /* White — texto sobre fundos escuros */
+    --color-text-muted: #7D90A0;    /* derivado do Teal — texto auxiliar */
+
+    /* ---------- Cores utilitárias ---------- */
+    --color-border: #CBD9E6;        /* Sky Blue — bordas de cartões e inputs */
+    --color-footer-bg: #557C8D;     /* Teal — rodapé */
+    --color-footer-text: #F5EFEB;   /* Beige — texto no rodapé */
+    --color-btn-wpp: #25D366;       /* mantido — verde WhatsApp */
+    --color-box-shadow: rgba(47, 65, 86, 0.08);  /* sombra baseada no Navy */
+    --color-overlay: rgba(47, 65, 86, 0.45);     /* overlay baseado no Navy */
+
+    /* ---------- Tipografia ---------- */
+    --font-heading: "Playfair Display", "Georgia", serif;
+    --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+
+    --fs-display: clamp(2.1rem, 1.4rem + 3vw, 3.6rem);
+    --fs-h2: clamp(1.6rem, 1.2rem + 1.8vw, 2.5rem);
+    --fs-h3: clamp(1.15rem, 1rem + 0.6vw, 1.35rem);
+    --fs-eyebrow: 0.8rem;
+    --fs-body: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+    --fs-small: 0.85rem;
+    --fs-cards: 0.95rem;
+
+    --font-spacing: 0.05em;
+    --font-spacing-wide: 0.18em;
+
+    --lh-heading: 1.2;
+    --lh-body: 1.75;
+
+    /* ---------- Espaçamentos ---------- */
+    --space-2xs: 0.4rem;
+    --space-xs: 0.75rem;
+    --space-sm: 1.25rem;
+    --space-md: 2rem;
+    --space-lg: 3.5rem;
+    --space-xl: 5.5rem;
+
+    /* ---------- Bordas, raios e sombras ---------- */
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
+    --radius-pill: 50px;
+    --shadow-soft: 0 10px 40px rgba(28, 58, 74, 0.07);
+    --shadow-card: 4px 4px 40px 2px var(--color-box-shadow);
+
+    /* ---------- Layout ---------- */
+    --container-max: 1200px;
+    --header-height: 84px;
+
+    /* ---------- Transições ---------- */
+    --transition-base: all 0.3s ease;
+    --transition-slow: all 0.45s ease;
+}

@@ -1,0 +1,68 @@
+/* ==========================================================================
+   UTILITIES.CSS
+   Classes utilitárias de uso geral
+   ========================================================================== */
+
+/* ---------- Alinhamento de texto ---------- */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* ---------- Cores de texto ---------- */
+.text-primary { color: var(--color-primary); }
+.text-accent { color: var(--color-accent); }
+.text-muted { color: var(--color-text-muted); }
+.text-light { color: var(--color-text-light); }
+
+/* ---------- Espaçamentos (margem inferior) ---------- */
+.mb-xs { margin-bottom: var(--space-xs); }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-0 { margin-bottom: 0; }
+
+/* ---------- Espaçamentos (margem superior) ---------- */
+.mt-xs { margin-top: var(--space-xs); }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+
+/* ---------- Largura ---------- */
+.w-full { width: 100%; }
+
+.max-largura {
+    max-width: 60ch;
+    margin-inline: auto;
+}
+
+/* ---------- Visibilidade responsiva ---------- */
+.somente-mobile { display: none; }
+.somente-desktop { display: revert; }
+
+@media (max-width: 760px) {
+    .somente-mobile { display: revert; }
+    .somente-desktop { display: none; }
+}
+
+/* ---------- Bloqueio de rolagem (menu mobile aberto) ---------- */
+.sem-rolagem {
+    overflow: hidden;
+}
+
+/* ---------- Lista de marcadores estilizada (uso geral em textos) ---------- */
+.lista-marcada {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lista-marcada li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+}
+
+.lista-marcada i {
+    color: var(--color-accent);
+    margin-top: 0.3rem;
+}

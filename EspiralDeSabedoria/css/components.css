@@ -1,0 +1,771 @@
+/* ==========================================================================
+   COMPONENTS.CSS
+   Componentes reutilizáveis da interface
+   ========================================================================== */
+
+/* ---------- Marca / Logo ---------- */
+.marca {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.marca__icone {
+    width: 62px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+.marca__texto {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: var(--color-primary);
+}
+
+.marca__texto em {
+    display: block;
+    font-style: normal;
+    color: var(--color-accent);
+}
+
+/* ---------- Menu de navegação ---------- */
+.menu__link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    position: relative;
+    padding-block: 0.35rem;
+    transition: var(--transition-base);
+}
+
+.menu__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+    transition: width 0.25s ease;
+}
+
+.menu__link:hover,
+.menu__link:focus-visible {
+    color: var(--color-accent);
+}
+
+.menu__link:hover::after,
+.menu__link:focus-visible::after,
+.menu__link.is-ativo::after {
+    width: 100%;
+}
+
+/* ---------- Seletor de idioma ---------- */
+.idiomas {
+    display: inline-flex;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    padding: 0.2rem;
+    background-color: var(--color-surface);
+    position: relative;
+}
+
+.idiomas__btn {
+    padding: 0.35rem 0.7rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: var(--font-spacing);
+    color: var(--color-primary);
+    transition: var(--transition-base);
+}
+
+.idiomas__btn.is-ativo {
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+}
+
+.idiomas__btn:not(.is-ativo):hover {
+    color: var(--color-accent);
+}
+
+/* --- Mobile: exibe só o idioma ativo, expande ao clicar --- */
+@media (max-width: 920px) {
+    .idiomas {
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        flex-direction: column;
+        padding: 0.15rem;
+        /* largura fixa pra não saltar ao expandir */
+        min-width: 48px;
+    }
+
+    /* Botões inativos ficam ocultos por padrão */
+    .idiomas__btn:not(.is-ativo) {
+        display: none;
+    }
+
+    /* Quando expandido, mostra todos */
+    .idiomas.is-expandido .idiomas__btn:not(.is-ativo) {
+        display: block;
+    }
+
+    /* Ativo vira o "gatilho" — mostra uma setinha discreta */
+    .idiomas__btn.is-ativo::after {
+        content: " ▾";
+        font-size: 0.65rem;
+        opacity: 0.7;
+    }
+
+    .idiomas.is-expandido .idiomas__btn.is-ativo::after {
+        content: " ▴";
+    }
+}
+
+@media (max-width: 370px) {
+    .idiomas__btn {
+        padding: 0.3rem 0.55rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* ---------- Botão hambúrguer (mobile) ---------- */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    z-index: 110;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
+    transition: var(--transition-base);
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 920px) {
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* ---------- Botões de ação ---------- */
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 0.9rem 1.9rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.95rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: var(--transition-base);
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.botao--primario {
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    box-shadow: var(--shadow-soft);
+}
+
+.botao--primario:hover,
+.botao--primario:focus-visible {
+    background-color: var(--color-accent-dark);
+    transform: translateY(-2px);
+}
+
+.botao--contorno {
+    background-color: transparent;
+    border-color: var(--color-border);
+    color: var(--color-primary);
+}
+
+.botao--contorno:hover,
+.botao--contorno:focus-visible {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.botao--bloco {
+    width: 100%;
+}
+
+.botao i {
+    font-size: 0.85em;
+    transition: transform 0.25s ease;
+}
+
+.botao--primario:hover i,
+.botao--contorno:hover i {
+    transform: translateX(3px);
+}
+
+.botao--contorno:hover i.fa-arrow-down {
+    transform: translateY(3px);
+}
+
+/* ---------- Etiqueta (eyebrow) ---------- */
+.etiqueta {
+    display: inline-block;
+    font-size: var(--fs-eyebrow);
+    font-weight: 700;
+    letter-spacing: var(--font-spacing-wide);
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: var(--space-sm);
+}
+
+/* ---------- Texto em destaque dentro de títulos ---------- */
+.destaque {
+    color: var(--color-accent);
+    font-style: italic;
+}
+
+/* ---------- Título de seção com ornamentos ---------- */
+.titulo-secao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    text-align: center;
+    margin-bottom: var(--space-sm);
+}
+
+.titulo-secao__ornamento {
+    width: 70px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 620px) {
+    .titulo-secao__ornamento {
+        display: none;
+    }
+}
+
+.subtitulo-secao {
+    text-align: center;
+    max-width: 56ch;
+    margin-inline: auto;
+    margin-bottom: var(--space-lg);
+    color: var(--color-text);
+}
+
+/* ---------- Molduras de imagem ---------- */
+.imagem-moldura {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    line-height: 0;
+    height: 600px;
+    width: 500px;
+}
+
+.imagem-moldura img {
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+}
+
+@media(max-width: 460px) {
+    .imagem-moldura {
+        height: 400px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 360px) {
+    .imagem-moldura {
+        height: 300px;
+        width: 260px;
+    }
+}
+
+
+/* ---------- Decoração: ramo de folhas ---------- */
+.decor-folha {
+    position: absolute;
+    pointer-events: none;
+    z-index: 3;
+    opacity: 0.9;
+}
+
+/* ---------- Ondas decorativas entre seções ---------- */
+.onda {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.onda svg {
+    display: block;
+    width: 100%;
+    height: 70px;
+}
+
+.onda--topo {
+    top: -1px;
+    transform: translateY(-1px);
+}
+
+.onda--base {
+    bottom: -1px;
+    transform: translateY(1px) rotate(180deg);
+}
+
+@media (max-width: 760px) {
+    .onda svg {
+        height: 40px;
+    }
+}
+
+/* ---------- Cartões de terapia ---------- */
+.card-terapia {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    padding: var(--space-md) var(--space-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+    text-align: center;
+    height: 100%;
+}
+
+.card-terapia__icone {
+    width: 64px;
+    height: 64px;
+    margin-inline: auto;
+    margin-bottom: var(--space-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--color-accent-soft);
+    color: var(--color-accent);
+}
+
+.card-terapia__icone svg {
+    width: 34px;
+    height: 34px;
+}
+
+.card-terapia__titulo {
+    font-size: var(--fs-h3);
+}
+
+.card-terapia__texto {
+    font-size: var(--fs-cards);
+    color: var(--color-text);
+    flex-grow: 1;
+}
+
+.card-terapia__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: var(--space-xs);
+    font-weight: 600;
+    font-size: var(--fs-cards);
+    color: var(--color-accent);
+    transition: var(--transition-base);
+}
+
+.card-terapia__link i {
+    transition: transform 0.25s ease;
+}
+
+.card-terapia__link:hover i,
+.card-terapia__link:focus-visible i {
+    transform: translateX(4px);
+}
+
+/* ---------- Animações de hover (mantidas do kit) ---------- */
+.anim {
+    transition: var(--transition-base);
+}
+
+.anim-up:hover,
+.anim-up:focus-within {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-card);
+}
+
+.anim-scale:hover {
+    transform: scale(1.03);
+}
+
+/* ---------- Perguntas frequentes (FAQ) ---------- */
+.faq-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    width: 100%;
+}
+
+.faq-card {
+    min-width: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 760px;
+    border-radius: 20px;
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-card);
+    font-family: var(--font-body);
+    border: 1px solid var(--color-border);
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1.4rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    text-align: left;
+    transition: var(--transition-base);
+}
+
+.faq-question:hover,
+.faq-question:focus-visible {
+    color: var(--color-accent);
+}
+
+.faq-question__icone {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--color-accent-soft);
+    color: var(--color-accent);
+    transition: transform 0.3s ease;
+}
+
+.faq-question[aria-expanded="true"] .faq-question__icone {
+    transform: rotate(45deg);
+}
+
+.faq-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    overflow: hidden;
+    transition: grid-template-rows 0.35s ease, opacity 0.25s ease;
+}
+
+.faq-content.is-aberto {
+    grid-template-rows: 1fr;
+    opacity: 1;
+}
+
+.faq-answer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 0;
+    padding: 0 1.8rem 1.6rem;
+    color: var(--color-text);
+}
+
+/* ---------- Cartão de depoimento ---------- */
+.depoimento-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+    height: 100%;
+}
+
+.depoimento__aspas {
+    color: var(--color-accent);
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.depoimento__texto {
+    flex-grow: 1;
+}
+
+.depoimento__autor {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.depoimento__avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.depoimento__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.depoimento__nome {
+    font-weight: 600;
+    color: var(--color-primary);
+    display: block;
+}
+
+.depoimento__cargo {
+    font-size: var(--fs-small);
+    color: var(--color-text-muted);
+}
+
+/* ---------- Formulário de agendamento ---------- */
+.agendamento {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+    text-align: center;
+}
+
+.agendamento__titulo {
+    text-align: center;
+    font-size: var(--fs-h3);
+    margin-bottom: 0.5rem;
+}
+
+.agendamento__texto {
+    text-align: center;
+    color: var(--color-text);
+    font-size: var(--fs-cards);
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.campos__linha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xs);
+}
+
+@media (max-width: 480px) {
+    .campos__linha {
+        grid-template-columns: 1fr;
+    }
+}
+
+.campo {
+    position: relative;
+}
+
+.campo__select,
+.campo__input {
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+    padding: 0.85rem 2.6rem 0.85rem 1.1rem;
+    font-size: 0.95rem;
+    transition: var(--transition-base);
+}
+
+.campo__select:focus,
+.campo__input:focus {
+    border-color: var(--color-accent);
+    background-color: var(--color-surface);
+}
+
+.campo__input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.65;
+}
+
+.campo__icone {
+    position: absolute;
+    right: 1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-accent);
+    pointer-events: none;
+    font-size: 0.9rem;
+}
+
+/* ---------- Botão flutuante do WhatsApp (mantém .wpp-btn do kit) ---------- */
+.wpp-btn {
+    display: inline-flex;
+    border-radius: 32px;
+    padding-block: 0.5rem;
+    padding-inline: 1.4rem;
+    gap: 0.75rem;
+    background-color: var(--color-btn-wpp);
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-light);
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+.wpp-btn:hover {
+    transform: scale(1.04);
+    box-shadow: var(--shadow-card);
+}
+
+.wpp-flutuante {
+    position: fixed;
+    right: var(--space-sm);
+    bottom: var(--space-sm);
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    z-index: 90;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 620px) {
+    .wpp-flutuante {
+        right: var(--space-xs);
+        bottom: var(--space-xs);
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+}
+
+/* ---------- Rodapé: marca, redes sociais e colunas ---------- */
+.rodape__marca .marca__texto,
+.rodape__marca .marca__texto em {
+    color: var(--color-text-light);
+}
+
+.rodape__tagline {
+    margin-top: var(--space-xs);
+    max-width: 26ch;
+    color: var(--color-footer-text);
+    opacity: 0.85;
+    font-size: var(--fs-small);
+}
+
+.rodape__social {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: var(--space-sm);
+}
+
+.rodape__social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: var(--color-text-light);
+    transition: var(--transition-base);
+}
+
+.rodape__social a:hover,
+.rodape__social a:focus-visible {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: var(--color-text-light);
+}
+
+.rodape__titulo-col {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-xs);
+}
+
+.rodape__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.rodape__lista a {
+    font-size: var(--fs-small);
+    color: var(--color-footer-text);
+    transition: var(--transition-base);
+}
+
+.rodape__lista a:hover,
+.rodape__lista a:focus-visible {
+    color: var(--color-text-light);
+    text-decoration: underline;
+}
+
+/* ---------- Mensagens de feedback de formulário ---------- */
+.mensagem-feedback {
+    display: none;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.1rem;
+    border-radius: var(--radius-sm);
+    font-size: var(--fs-small);
+    font-weight: 600;
+}
+
+.mensagem-feedback.is-visivel {
+    display: flex;
+}
+
+.mensagem-feedback--sucesso {
+    background-color: rgba(58, 125, 143, 0.12);
+    color: var(--color-accent-dark);
+}
+
+.mensagem-feedback--erro {
+    background-color: rgba(193, 71, 71, 0.12);
+    color: #b14747;
+}
