@@ -44,6 +44,20 @@
     aspect-ratio: 5 / 4;
 }
 
+@media (max-width: 960px) {
+    .hero__imagem .imagem-moldura {
+        height: 500px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 850px) {
+    .hero__imagem .imagem-moldura {
+        height: 450px;
+        width: 350px;
+    }
+}
+
 @media (max-width: 760px) {
     #hero{
         min-height: 100vh;
@@ -115,15 +129,65 @@
     }
 }
 
+@media (max-width: 900px) {
+    .sobre__imagem .imagem-moldura {
+        width: 450px;
+    }
+
+    .sobre__grid {
+        grid-template-columns: 0.8fr 1.2fr;
+    }
+
+    .sobre__imagem {
+        width: 70%;
+    }
+}
+
 @media (max-width: 760px) {
     .sobre__grid {
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .sobre__imagem{
         display: flex;
         justify-content: center;
         align-content: center;
+    }
+
+    .sobre__imagem .imagem-moldura {
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    #sobre {
+        height: auto;
+    }
+
+    .sobre__grid {
+        overflow-x: hidden;
+        justify-content: center;
+    }
+
+    .sobre__texto .etiqueta {
+        text-align: center;
+    }
+
+    .sobre__texto {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 360px) {
+    .sobre__texto {
+        max-width: 260px;
+    }
+
+    .sobre__imagem {
+        width: 270px;
+        
+
     }
 }
 
@@ -146,6 +210,7 @@
 }
 
 .cursos__imagem .imagem-moldura {
+    width: 700px;
     aspect-ratio: 16 / 9;
 }
 
@@ -160,6 +225,19 @@
     margin-top: var(--space-2xs);
 }
 
+@media (max-width: 1024px) {
+    .cursos__imagem .imagem-moldura {
+        width: 550px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 890px) { 
+    .cursos__imagem .imagem-moldura {
+        width: 400px;
+    }
+}
+
 @media (max-width: 760px) {
     .cursos__grid {
         grid-template-columns: 1fr;
@@ -172,7 +250,33 @@
 
     .cursos__imagem .imagem-moldura{
         height: 400px;
-        width: 500px;
+        width: 550px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cursos__imagem .imagem-moldura {
+        width: 450px;
+    }
+}
+
+@media (max-width: 560px) {
+    .cursos__imagem .imagem-moldura {
+        height: 350px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 460px) {
+    .cursos__imagem .imagem-moldura {
+        width: 380px;
+    }
+}
+
+@media (max-width: 380px) {
+    .cursos__imagem .imagem-moldura {
+        width: 280px;
+        height: 300px;
     }
 }
 
