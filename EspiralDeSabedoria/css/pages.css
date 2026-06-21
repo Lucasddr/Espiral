@@ -205,13 +205,14 @@
     background-color: var(--color-bg);
 }
 
+/* --- Intro grid --- */
 .cursos__grid {
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
+    margin-bottom: var(--space-xl);
 }
 
 .cursos__imagem .imagem-moldura {
-    width: 700px;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 3;
 }
 
 .cursos__texto {
@@ -220,15 +221,223 @@
     gap: var(--space-sm);
 }
 
-.cursos__texto .botao {
-    align-self: flex-start;
-    margin-top: var(--space-2xs);
+.cursos__subtitulo {
+    font-size: var(--fs-h2);
+    color: var(--color-primary);
+    margin-top: -0.5rem;
 }
 
+.cursos__tags {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: var(--space-xs);
+}
+
+.cursos__tags li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: var(--fs-cards);
+    color: var(--color-text);
+}
+
+.cursos__tags i {
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+/* --- Título dos blocos internos --- */
+.cursos__bloco-titulo {
+    font-size: var(--fs-h2);
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+/* --- Cards de aprendizado --- */
+.cursos__aprendizados {
+    margin-bottom: var(--space-xl);
+}
+
+.cursos__cards-aprende {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cursos__card-aprende {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    padding: var(--space-md) var(--space-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+}
+
+.cursos__card-aprende--destaque {
+    border-color: var(--color-accent);
+    background-color: var(--color-accent-soft);
+}
+
+.cursos__card-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--color-accent-soft);
+    color: var(--color-accent);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.cursos__card-aprende--destaque .cursos__card-icone {
+    background-color: var(--color-surface);
+}
+
+.cursos__card-aprende h4 {
+    font-size: 1rem;
+    color: var(--color-primary);
+    line-height: 1.3;
+}
+
+.cursos__card-aprende p {
+    font-size: var(--fs-cards);
+    color: var(--color-text);
+    line-height: var(--lh-body);
+}
+
+/* --- Incluído --- */
+.cursos__inclui {
+    margin-bottom: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cursos__inclui-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xs) var(--space-lg);
+    max-width: 640px;
+    width: 100%;
+}
+
+.cursos__inclui-lista li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    font-size: var(--fs-body);
+}
+
+.cursos__inclui-lista i {
+    color: var(--color-accent);
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+/* --- Investimento --- */
+.cursos__investimento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    align-items: center;
+    padding: var(--space-lg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-surface);
+}
+
+.cursos__precos {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-sm);
+}
+
+.cursos__preco {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.cursos__preco-valor {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.cursos__preco--destaque .cursos__preco-valor {
+    color: var(--color-accent);
+}
+
+.cursos__preco-label {
+    font-size: var(--fs-small);
+    color: var(--color-text-muted);
+}
+
+.cursos__preco-ou {
+    font-size: var(--fs-small);
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+.cursos__pagamentos {
+    font-size: var(--fs-small);
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cursos__pagamentos i {
+    color: var(--color-accent);
+}
+
+.cursos__cta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.cursos__formato {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.cursos__formato span {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: var(--fs-cards);
+    color: var(--color-text);
+}
+
+.cursos__formato i {
+    color: var(--color-accent);
+    width: 16px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* --- Responsivo --- */
 @media (max-width: 1024px) {
     .cursos__imagem .imagem-moldura {
         width: 550px;
         height: 350px;
+    }
+
+    .cursos__cards-aprende {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cursos__investimento {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -241,6 +450,24 @@
 @media (max-width: 760px) {
     .cursos__grid {
         grid-template-columns: 1fr;
+    }
+
+    .cursos__cards-aprende {
+        grid-template-columns: 1fr;
+    }
+
+    .cursos__inclui-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .cursos__precos {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-sm);
+    }
+
+    .cursos__investimento {
+        padding: var(--space-md) var(--space-sm);
     }
 
     .cursos__imagem {
@@ -271,12 +498,28 @@
     .cursos__imagem .imagem-moldura {
         width: 380px;
     }
+
+    .cursos__grid {
+        justify-items: center;
+    }
+
+    .cursos__texto p {
+        max-width: 320px;
+    }
+
+    .cursos__texto a {
+        max-width: 320px;
+    }
 }
 
 @media (max-width: 380px) {
     .cursos__imagem .imagem-moldura {
         width: 280px;
         height: 300px;
+    }
+
+    .cursos__preco-valor {
+        font-size: 1.6rem;
     }
 }
 

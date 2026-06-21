@@ -91,11 +91,11 @@
 }
 
 /* --- Mobile: exibe só o idioma ativo, expande ao clicar --- */
-@media (max-width: 920px) {
+@media (max-width: 970px) {
     .idiomas {
         position: absolute;
         top: 20px;
-        right: 80px;
+        right: 10px;
         flex-direction: column;
         padding: 0.15rem;
         /* largura fixa pra não saltar ao expandir */
@@ -121,6 +121,14 @@
 
     .idiomas.is-expandido .idiomas__btn.is-ativo::after {
         content: " ▴";
+    }
+}
+
+@media (max-width: 920px) {
+    .idiomas {
+        position: absolute;
+        top: 20px;
+        right: 80px;
     }
 }
 
