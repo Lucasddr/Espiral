@@ -20,13 +20,13 @@ if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
-        if (entry.isIntersecting || entry.intersectionRatio >= 0.15) {
+        if (entry.isIntersecting || entry.intersectionRatio >= 0.5) {
             entry.target.classList.add("active");
             observer.unobserve(entry.target);
         }
         });
     },
-    { threshold: 0.15 },
+    { threshold: 0.5 },
     );
 
     containers.forEach((el) => observer.observe(el));
