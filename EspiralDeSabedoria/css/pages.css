@@ -131,7 +131,8 @@
 
 @media (max-width: 900px) {
     .sobre__imagem .imagem-moldura {
-        width: 450px;
+        width: 400px;
+        height: 500px;
     }
 
     .sobre__grid {
@@ -156,6 +157,7 @@
     }
 
     .sobre__imagem .imagem-moldura {
+        width: 500px;
         height: 500px;
     }
 }
@@ -177,6 +179,10 @@
     .sobre__texto {
         max-width: 300px;
     }
+
+    .sobre__imagem .imagem-moldura{
+        height: 350px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -185,9 +191,11 @@
     }
 
     .sobre__imagem {
-        width: 270px;
-        
+        width: 270px;       
+    }
 
+    .sobre__imagem .imagem-moldura{
+        height: 350px;
     }
 }
 
@@ -212,7 +220,8 @@
 }
 
 .cursos__imagem .imagem-moldura {
-    aspect-ratio: 4 / 3;
+    width: 600px;
+    height: 400px;
 }
 
 .cursos__texto {
@@ -489,14 +498,15 @@
 
 @media (max-width: 560px) {
     .cursos__imagem .imagem-moldura {
-        height: 350px;
+        height: 320px;
         width: 400px;
     }
 }
 
 @media (max-width: 460px) {
     .cursos__imagem .imagem-moldura {
-        width: 380px;
+        height: 300px;
+        width: 360px;
     }
 
     .cursos__grid {
@@ -515,7 +525,7 @@
 @media (max-width: 380px) {
     .cursos__imagem .imagem-moldura {
         width: 280px;
-        height: 300px;
+        height: 200px;
     }
 
     .cursos__preco-valor {

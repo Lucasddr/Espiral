@@ -128,7 +128,7 @@
     }
 
     /* ----------------------------------------------------------------
-       4. Acordeão de Perguntas Frequentes
+        4. Acordeão de Perguntas Frequentes
        ---------------------------------------------------------------- */
     document.querySelectorAll(".faq-question").forEach((botao) => {
         botao.addEventListener("click", () => {
@@ -145,7 +145,7 @@
     });
 
     /* ----------------------------------------------------------------
-       5. Seletor de idioma (PT / ES)
+        5. Seletor de idioma (PT / ES / EN / FR)
        ---------------------------------------------------------------- */
     const dicionario = {
         pt: {
@@ -185,14 +185,78 @@
 
             "cursos-etiqueta": "Constelações Familiares",
             "cursos-titulo": "Cursos e workshops para o seu desenvolvimento pessoal",
-            "cursos-subtitulo" : "Com Especialidade na Água",
+            "cursos-subtitulo": "Com especialidade na Água",
             "cursos-texto": "Programas presenciais e online pensados para quem deseja ir além das sessões individuais — ferramentas práticas de autoconhecimento, regulação emocional e conexão espiritual para aplicar no dia a dia.",
+
             "btn-ver-cursos": "Ver cursos disponíveis",
+
+            "cursos-tag-1": "Online · 12 meses",
+            "cursos-tag-2": "Aulas ao vivo e gravadas",
+            "cursos-tag-3": "Início agosto 2026",
+
+            "cursos-aprende-titulo": "O que você vai aprender",
+
+            "aprende-1-titulo": "Escuta terapêutica",
+            "aprende-1-texto": "Aprender a escutar além das palavras, identificando o que o consultante expressa de forma consciente e inconsciente.",
+
+            "aprende-2-titulo": "Olhar sistêmico profundo",
+            "aprende-2-texto": "Compreender como vínculos, lealdades invisíveis e histórias familiares influenciam as experiências presentes.",
+
+            "aprende-3-titulo": "Estados do ser",
+            "aprende-3-texto": "Reconhecer quando uma pessoa está no Estado Criança, Vítima, Juiz ou Adulto, e como acompanhá-la rumo à consciência e responsabilidade pessoal.",
+
+            "aprende-4-titulo": "Arte de observar sem julgar",
+            "aprende-4-texto": "Desenvolver uma atitude interna baseada na presença, no respeito e na observação fenomenológica.",
+
+            "aprende-5-titulo": "Frases sanadoras",
+            "aprende-5-texto": "Utilizar palavras que facilitam processos de integração, reconhecimento e transformação dentro do sistema familiar.",
+
+            "aprende-6-titulo": "Terapia Transgeracional",
+            "aprende-6-texto": "Incorporar conceitos como Projeto Sentido, Lealdades Invisíveis, Memória Familiar e Ciclos Biológicos Memorizáveis.",
+
+            "aprende-7-titulo": "Cartas Sabedoria em Espiral®",
+            "aprende-7-texto": "Utilizar cartas terapêuticas como recurso complementar em sessões individuais, autoconstelações e processos de acompanhamento.",
+
+            "aprende-8-titulo": "Constelações Individuais na Água ✦",
+            "aprende-8-texto": "Metodologia única para observar dinâmicas sistêmicas através do movimento dos elementos na água, ampliando a compreensão do campo e do processo terapêutico.",
+
+            "aprende-9-titulo": "Atos simbólicos e recursos",
+            "aprende-9-texto": "Conhecer diferentes exercícios e ferramentas para acompanhar processos que vão além da constelação.",
+
+            "cursos-inclui-titulo": "O que está incluído",
+
+            "inclui-1": "16 módulos de formação",
+            "inclui-2": "Especialização em Constelações Individuais no Água",
+            "inclui-3": "Material de estudo",
+            "inclui-4": "Práticas supervisionadas",
+            "inclui-5": "Gravações das aulas",
+            "inclui-6": "Grupo de acompanhamento",
+            "inclui-7": "Certificado de Formação",
+
+            "cursos-invest-titulo": "Investimento",
+
+            "cursos-preco-mensal": "USD 60",
+            "cursos-preco-mensal-label": "por mês · 12 parcelas",
+
+            "cursos-ou": "ou",
+
+            "cursos-preco-total": "USD 690",
+            "cursos-preco-total-label": "pagamento único · economize USD 30",
+
+            "cursos-pagamentos": "Formas de pagamento: PayPal, Wise, Link de pagamento, Prex, Pix.",
+
+            "cursos-formato-1": "Online",
+            "cursos-formato-2": "12 meses",
+            "cursos-formato-3": "1h30 semanais",
+            "cursos-formato-4": "Aulas ao vivo e gravadas",
+            "cursos-formato-5": "Início agosto 2026",
+
+            "btn-inscrever-curso": "Quero me inscrever",
 
             "faq-titulo": "Perguntas frequentes",
             "faq-subtitulo": "Tire suas dúvidas antes de iniciar o seu processo terapêutico. Se não encontrar a resposta que procura, fale comigo diretamente.",
             "faq1-pergunta": "Preciso de alguma indicação para iniciar o acompanhamento?",
-            "faq1-resposta": "Não. Você pode entrar em contato diretamente comigo, sem necessidade de indicação médica ou psicológica. Na primeira sessão, conversamos sobre o seu momento e definimos juntas o melhor caminho.",
+            "faq1-resposta": "Não. Você pode entrar em contato diretamente comigo, sem necessidade de indicação médica ou psicológica. Na primeira sessão, conversamos sobre o seu momento e definimos juntas o melhor caminho. Porém, para as constelações familiares, caso esteja realizando acompanhamento psiquiátrico, é necessário consultar o profissional que está realizando o acompanhamento para verificar se você está autorizado a isso.",
             "faq2-pergunta": "As sessões são online ou presenciais?",
             "faq2-resposta": "Ofereço as duas modalidades. As sessões online acontecem por videochamada, com a mesma qualidade de presença e acolhimento das sessões presenciais.",
             "faq3-pergunta": "Com que frequência devo fazer as sessões?",
@@ -204,15 +268,37 @@
 
             "depo-titulo": "Depoimentos",
             "depo-subtitulo": "Histórias reais de pessoas que encontraram um novo olhar sobre si mesmas através do acompanhamento terapêutico.",
-            "depo-texto": "As sessões me ajudaram a compreender padrões que eu repetia há anos sem perceber. Hoje me sinto mais leve, presente e em paz com a minha própria história.",
-            "depo-nome": "Mariana G.",
-            "depo-cargo": "Em acompanhamento desde 2023",
+            
+            "depo-1-texto": "Anne, muito obrigado. Você não sabe o quanto está me ajudando. Há anos tento encontrar respostas como essas. Hoje sorrio um pouco mais graças a você. Vou colocar em prática nestes dias.",
+            "depo-1-nome": "Dante",
+            "depo-1-cargo": "2025",
+
+            "depo-2-texto": "Olá querida Anne, queria agradecer pela acolhida que nos deu durante todo o curso, por compartilhar conosco seus conhecimentos e pela sua ajuda em todos os momentos. Muito obrigada por tudo.",
+            "depo-2-nome": "Angie",
+            "depo-2-cargo": "2025",
+
+            "depo-3-texto": "Um workshop incrível! Muitas viradas de chave, aprendizados e novos olhares! Foi algo super necessário para me reconhecer. Um caminho de autoconhecimento. Gratidão Anne, amei demais participar!",
+            "depo-3-nome": "Helen",
+            "depo-3-cargo": "2025",
+
+            "depo-4-texto": "Sinceramente, foi a melhor coisa que me aconteceu no ano. Cada tema que íamos vendo refletia na realidade, era incrível como tudo se conectava. O que venho curando é maravilhoso. Voltei a ter relação com meus pais de uma maneira diferente. Eu com certeza recomendaria para qualquer pessoa, porque me ajudou muito. Tornei consciente muitas coisas que eu não sabia. E como você conduz, Anne, é muito bonito, muito amoroso, tudo flui naturalmente. Gratidão de todo coração por tudo.",
+            "depo-4-nome": "Catalina",
+            "depo-4-cargo": "2025",
+
+            "depo-5-texto": "Passando para dizer que estou sentindo falta dos nossos encontros! Foi muito bom estar com vocês neste ano, mesmo que virtualmente. O workshop me mostrou que, apesar do autoconhecimento ser um processo individual, ele fica muito mais leve com companhia. Obrigada Anne e Helen por me acompanharem nessa jornada. Desejo boas celebrações e uma ótima virada de ano para nós.",
+            "depo-5-nome": "Paula",
+            "depo-5-cargo": "2025",
+
+            "depo-6-texto": "Olá Anne! Aquela situação da minha amiga que eu abordei na última constelação se desbloqueou no mesmo dia e no dia seguinte. Incrível.",
+            "depo-6-nome": "Carol",
+            "depo-6-cargo": "2026",
 
             "agenda-titulo": "Agende sua sessão",
             "agenda-subtitulo": "Escolha o dia e o horário que melhor se encaixam na sua rotina.",
             "label-servico": "Serviço",
             "opt-servico-placeholder": "Selecione um serviço",
             "opt-servico-5": "Sessão de Avaliação",
+            "opt-servico-6": "Cursos",
             "label-data": "Data",
             "label-horario": "Horário",
             "opt-horario-placeholder": "Selecione um horário",
@@ -270,16 +356,80 @@
             "terapia5-texto": "Una herramienta utilizada para la armonización energética, desbloqueos, limpiezas y potenciación de proyectos, deseos y espacios, buscando equilibrio en diferentes áreas de la vida.",
             "link-saber-mais": "Saber más",
 
-            "cursos-etiqueta": "Formación",
+            "cursos-etiqueta": "Constelaciones Familiares",
             "cursos-titulo": "Cursos y talleres para tu desarrollo personal",
-            "cursos-subtitulo" : "Con especialidad en el Agua",
-            "cursos-texto": "Programas presenciales y online pensados para quienes desean ir más allá de las sesiones individuales — herramientas prácticas de autoconocimiento, regulación emocional y conexión espiritual para aplicar en el día a día.",
+            "cursos-subtitulo": "Con especialidad en el Agua",
+            "cursos-texto": "Programas presenciales y en línea pensados para quienes desean ir más allá de las sesiones individuales — herramientas prácticas de autoconocimiento, regulación emocional y conexión espiritual para aplicar en el día a día.",
+
             "btn-ver-cursos": "Ver cursos disponibles",
+
+            "cursos-tag-1": "Online · 12 meses",
+            "cursos-tag-2": "Clases en vivo y grabadas",
+            "cursos-tag-3": "Inicio agosto 2026",
+
+            "cursos-aprende-titulo": "Lo que vas a aprender",
+
+            "aprende-1-titulo": "Escucha terapéutica",
+            "aprende-1-texto": "Aprender a escuchar más allá de las palabras, identificando lo que el consultante expresa de forma consciente e inconsciente.",
+
+            "aprende-2-titulo": "Mirada sistémica profunda",
+            "aprende-2-texto": "Comprender cómo vínculos, lealtades invisibles e historias familiares influyen en las experiencias presentes.",
+
+            "aprende-3-titulo": "Estados del ser",
+            "aprende-3-texto": "Reconocer cuando una persona está en Estado Niño, Víctima, Juez o Adulto, y cómo acompañarla hacia la conciencia y responsabilidad personal.",
+
+            "aprende-4-titulo": "Arte de observar sin juzgar",
+            "aprende-4-texto": "Desarrollar una actitud interna basada en la presencia, el respeto y la observación fenomenológica.",
+
+            "aprende-5-titulo": "Frases sanadoras",
+            "aprende-5-texto": "Utilizar palabras que facilitan procesos de integración, reconocimiento y transformación dentro del sistema familiar.",
+
+            "aprende-6-titulo": "Terapia transgeneracional",
+            "aprende-6-texto": "Incorporar conceptos como Proyecto Sentido, Lealtades Invisibles, Memoria Familiar y Ciclos Biológicos Memorizables.",
+
+            "aprende-7-titulo": "Cartas Sabiduría en Espiral®",
+            "aprende-7-texto": "Utilizar cartas terapéuticas como recurso complementario en sesiones individuales, autoconstelaciones y acompañamiento.",
+
+            "aprende-8-titulo": "Constelaciones individuales en el Agua ✦",
+            "aprende-8-texto": "Metodología única para observar dinámicas sistémicas a través del movimiento de los elementos en el agua, ampliando la comprensión del campo y del proceso terapéutico.",
+
+            "aprende-9-titulo": "Actos simbólicos y recursos",
+            "aprende-9-texto": "Conocer diferentes ejercicios y herramientas para acompañar procesos más allá de la constelación.",
+
+            "cursos-inclui-titulo": "Qué incluye",
+
+            "inclui-1": "16 módulos de formación",
+            "inclui-2": "Especialización en Constelaciones Individuales en el Agua",
+            "inclui-3": "Material de estudio",
+            "inclui-4": "Prácticas supervisadas",
+            "inclui-5": "Grabaciones de las clases",
+            "inclui-6": "Grupo de acompañamiento",
+            "inclui-7": "Certificado de formación",
+
+            "cursos-invest-titulo": "Inversión",
+
+            "cursos-preco-mensal": "USD 60",
+            "cursos-preco-mensal-label": "por mes · 12 cuotas",
+
+            "cursos-ou": "o",
+
+            "cursos-preco-total": "USD 690",
+            "cursos-preco-total-label": "pago único · ahorra USD 30",
+
+            "cursos-pagamentos": "Formas de pago: PayPal, Wise, link de pago, Prex, Pix.",
+
+            "cursos-formato-1": "En línea",
+            "cursos-formato-2": "12 meses",
+            "cursos-formato-3": "1h30 semanales",
+            "cursos-formato-4": "Clases en vivo y grabadas",
+            "cursos-formato-5": "Inicio agosto 2026",
+
+            "btn-inscrever-curso": "Quiero inscribirme",
 
             "faq-titulo": "Preguntas frecuentes",
             "faq-subtitulo": "Resuelve tus dudas antes de iniciar tu proceso terapéutico. Si no encuentras la respuesta que buscas, escríbeme directamente.",
             "faq1-pergunta": "¿Necesito alguna derivación para iniciar el acompañamiento?",
-            "faq1-resposta": "No. Puedes contactarme directamente, sin necesidad de derivación médica o psicológica. En la primera sesión, conversamos sobre tu momento y definimos juntas el mejor camino.",
+            "faq1-resposta": "No. Puedes entrar en contacto directamente conmigo, sin necesidad de indicación médica o psicológica. En la primera sesión, conversamos sobre tu momento y definimos juntas el mejor camino. Sin embargo, para las constelaciones familiares, si estás realizando un seguimiento psiquiátrico, es necesario consultar al profesional que te está acompañando para verificar si estás autorizado a hacerlo.",
             "faq2-pergunta": "¿Las sesiones son online o presenciales?",
             "faq2-resposta": "Ofrezco ambas modalidades. Las sesiones online se realizan por videollamada, con la misma calidad de presencia y acogida que las sesiones presenciales.",
             "faq3-pergunta": "¿Con qué frecuencia debo hacer las sesiones?",
@@ -291,15 +441,37 @@
 
             "depo-titulo": "Testimonios",
             "depo-subtitulo": "Historias reales de personas que encontraron una nueva mirada sobre sí mismas a través del acompañamiento terapéutico.",
-            "depo-texto": "Las sesiones me ayudaron a comprender patrones que repetía desde hace años sin darme cuenta. Hoy me siento más ligera, presente y en paz con mi propia historia.",
-            "depo-nome": "Mariana G.",
-            "depo-cargo": "En acompañamiento desde 2023",
+            
+            "depo-1-texto": "Anne, muchas gracias. No sabes cuánto me estás ayudando. Llevo años tratando de encontrar respuestas como estas. Hoy sonrío un poco más gracias a ti. Lo voy a poner en práctica estos días.",
+            "depo-1-nome": "Dante",
+            "depo-1-cargo": "2025",
+
+            "depo-2-texto": "Hola querida Anne, quería agradecerte por la calidez que nos diste durante todo el curso, por compartir con nosotras tus conocimientos y por tu ayuda en todo momento. Muchas gracias por todo.",
+            "depo-2-nome": "Angie",
+            "depo-2-cargo": "2025",
+
+            "depo-3-texto": "¡Un workshop increíble! Muchos cambios de perspectiva, aprendizajes y nuevas miradas. Fue algo muy necesario para reconocerme. Un camino de autoconocimiento. Gratitud Anne, me encantó participar.",
+            "depo-3-nome": "Helen",
+            "depo-3-cargo": "2025",
+
+            "depo-4-texto": "Sinceramente, fue lo mejor que me pasó en el año. Cada tema que veíamos se reflejaba en la realidad, era increíble cómo todo se conectaba. Lo que vengo sanando es maravilloso. Volví a tener relación con mis padres de una manera diferente. Recomiendo totalmente este proceso porque me ayudó muchísimo. Anne lo guía de una forma muy amorosa y todo fluye naturalmente. Gratitud de todo corazón.",
+            "depo-4-nome": "Catalina",
+            "depo-4-cargo": "2025",
+
+            "depo-5-texto": "Paso a decir que estoy sintiendo la falta de nuestros encuentros. Fue muy bueno compartir este año con ustedes, aunque sea virtualmente. El workshop mostró que, aunque el autoconocimiento es individual, se vuelve más liviano con compañía. Gracias Anne y Helen por acompañarme en esta jornada. Deseo felices celebraciones y un buen fin de año para nosotros.",
+            "depo-5-nome": "Paula",
+            "depo-5-cargo": "2025",
+
+            "depo-6-texto": "¡Hola Anne! Aquella situación de mi amiga que abordé en la última constelación se desbloqueó el mismo día y al día siguiente. Increíble.",
+            "depo-6-nome": "Carol",
+            "depo-6-cargo": "2026",
 
             "agenda-titulo": "Agenda tu sesión",
             "agenda-subtitulo": "Elige el día y el horario que mejor se adapten a tu rutina.",
             "label-servico": "Servicio",
             "opt-servico-placeholder": "Selecciona un servicio",
             "opt-servico-5": "Sesión de Evaluación",
+            "opt-servico-6": "Cursos",
             "label-data": "Fecha",
             "label-horario": "Horario",
             "opt-horario-placeholder": "Selecciona un horario",
@@ -357,16 +529,80 @@
             "terapia5-texto": "A tool used for energetic harmonization, block removal, cleansing and strengthening projects, intentions and environments.",
             "link-saber-mais": "Learn more",
 
-            "cursos-etiqueta": "Training",
+            "cursos-etiqueta": "Family Constellations",
             "cursos-titulo": "Courses and workshops for your personal development",
-            "cursos-subtitulo" : "With a specialization in Water",
-            "cursos-texto": "In-person and online programmes designed for those who want to go beyond individual sessions — practical tools for self-knowledge, emotional regulation, and spiritual connection to apply every day.",
-            "btn-ver-cursos": "View available courses",
+            "cursos-subtitulo": "Specialized in Water",
+            "cursos-texto": "In-person and online programs designed for those who want to go beyond individual sessions — practical tools for self-knowledge, emotional regulation, and spiritual connection to apply in daily life.",
+
+            "btn-ver-cursos": "View courses available",
+
+            "cursos-tag-1": "Online · 12 months",
+            "cursos-tag-2": "Live and recorded classes",
+            "cursos-tag-3": "Start August 2026",
+
+            "cursos-aprende-titulo": "What you will learn",
+
+            "aprende-1-titulo": "Therapeutic listening",
+            "aprende-1-texto": "Learn to listen beyond words, identifying what the client expresses consciously and unconsciously.",
+
+            "aprende-2-titulo": "Deep systemic view",
+            "aprende-2-texto": "Understand how bonds, invisible loyalties, and family histories influence present experiences.",
+
+            "aprende-3-titulo": "States of being",
+            "aprende-3-texto": "Recognize when a person is in Child, Victim, Judge, or Adult state, and how to guide them toward awareness and responsibility.",
+
+            "aprende-4-titulo": "The art of non-judgmental observation",
+            "aprende-4-texto": "Develop an internal attitude based on presence, respect, and phenomenological observation.",
+
+            "aprende-5-titulo": "Healing phrases",
+            "aprende-5-texto": "Use words that facilitate processes of integration, recognition, and transformation within the family system.",
+
+            "aprende-6-titulo": "Transgenerational therapy",
+            "aprende-6-texto": "Incorporate concepts such as Meaning Project, Invisible Loyalties, Family Memory, and Memorized Biological Cycles.",
+
+            "aprende-7-titulo": "Spiral Wisdom Cards®",
+            "aprende-7-texto": "Use therapeutic cards as a complementary resource in individual sessions, self-constellations, and guidance processes.",
+
+            "aprende-8-titulo": "Individual Constellations in Water ✦",
+            "aprende-8-texto": "A unique methodology to observe systemic dynamics through the movement of elements in water, expanding understanding of the field and therapeutic process.",
+
+            "aprende-9-titulo": "Symbolic acts and tools",
+            "aprende-9-texto": "Learn different exercises and tools to support processes beyond constellation work.",
+
+            "cursos-inclui-titulo": "What’s included",
+
+            "inclui-1": "16 training modules",
+            "inclui-2": "Specialization in Individual Constellations in Water",
+            "inclui-3": "Study materials",
+            "inclui-4": "Supervised practice",
+            "inclui-5": "Class recordings",
+            "inclui-6": "Support group",
+            "inclui-7": "Certification",
+
+            "cursos-invest-titulo": "Investment",
+
+            "cursos-preco-mensal": "USD 60",
+            "cursos-preco-mensal-label": "per month · 12 installments",
+
+            "cursos-ou": "or",
+
+            "cursos-preco-total": "USD 690",
+            "cursos-preco-total-label": "one-time payment · save USD 30",
+
+            "cursos-pagamentos": "Payment methods: PayPal, Wise, payment link, Prex, Pix.",
+
+            "cursos-formato-1": "Online",
+            "cursos-formato-2": "12 months",
+            "cursos-formato-3": "1h30 weekly",
+            "cursos-formato-4": "Live and recorded classes",
+            "cursos-formato-5": "Start August 2026",
+
+            "btn-inscrever-curso": "Enroll now",
 
             "faq-titulo": "Frequently asked questions",
             "faq-subtitulo": "Get your questions answered before starting your therapeutic process. If you can't find what you're looking for, reach out to me directly.",
             "faq1-pergunta": "Do I need a referral to start the process?",
-            "faq1-resposta": "No. You can contact me directly, without any medical or psychological referral. In the first session we talk about where you are and decide together the best path forward.",
+            "faq1-resposta": "No. You can contact me directly, without the need for medical or psychological referral. In the first session, we talk about your current moment and together define the best path. However, for family constellations, if you are undergoing psychiatric treatment, it is necessary to consult the professional responsible for your care to verify whether you are authorized to proceed.",
             "faq2-pergunta": "Are sessions online or in-person?",
             "faq2-resposta": "I offer both options. Online sessions take place via video call, with the same quality of presence and care as in-person sessions.",
             "faq3-pergunta": "How often should I have sessions?",
@@ -378,15 +614,37 @@
 
             "depo-titulo": "Testimonials",
             "depo-subtitulo": "Real stories from people who found a new perspective on themselves through therapeutic support.",
-            "depo-texto": "The sessions helped me understand patterns I had been repeating for years without realising. Today I feel lighter, more present, and at peace with my own story.",
-            "depo-nome": "Mariana G.",
-            "depo-cargo": "In therapy since 2023",
+            
+            "depo-1-texto": "Anne, thank you so much. You don’t know how much you are helping me. I have spent years trying to find answers like these. Today I smile a little more thanks to you. I will put it into practice these days.",
+            "depo-1-nome": "Dante",
+            "depo-1-cargo": "2025",
+
+            "depo-2-texto": "Dear Anne, I wanted to thank you for the warmth you shared throughout the course, for sharing your knowledge with us, and for your constant support. Thank you so much for everything.",
+            "depo-2-nome": "Angie",
+            "depo-2-cargo": "2025",
+
+            "depo-3-texto": "An incredible workshop! So many shifts in perspective, learning, and new ways of seeing things. It was exactly what I needed to reconnect with myself. A journey of self-knowledge. Gratitude Anne, I loved participating.",
+            "depo-3-nome": "Helen",
+            "depo-3-cargo": "2025",
+
+            "depo-4-texto": "Honestly, it was the best thing that happened to me this year. Every topic we explored reflected in real life, it was incredible how everything connected. The healing process I am going through is wonderful. I reconnected with my parents in a different way. I would definitely recommend it to anyone because it helped me a lot. I became aware of many things I didn’t know. And the way you guide, Anne, is beautiful and very loving, everything flows naturally. Deep gratitude from my heart.",
+            "depo-4-nome": "Catalina",
+            "depo-4-cargo": "2025",
+
+            "depo-5-texto": "Just wanted to say I’m really missing our meetings! It was wonderful being with you this year, even if virtually. The workshop showed me that although self-knowledge is an individual process, it becomes much lighter with company. Thank you Anne and Helen for accompanying me on this journey. Wishing happy celebrations and a great year end for us.",
+            "depo-5-nome": "Paula",
+            "depo-5-cargo": "2025",
+
+            "depo-6-texto": "Hi Anne! That situation with my friend I brought up in the last constellation resolved itself on the same day and the next day. Incredible.",
+            "depo-6-nome": "Carol",
+            "depo-6-cargo": "2026",
 
             "agenda-titulo": "Book your session",
             "agenda-subtitulo": "Choose the day and time that best fits your routine.",
             "label-servico": "Service",
             "opt-servico-placeholder": "Select a service",
             "opt-servico-5": "Assessment Session",
+            "opt-servico-6": "Courses",
             "label-data": "Date",
             "label-horario": "Time",
             "opt-horario-placeholder": "Select a time",
@@ -444,16 +702,80 @@
             "terapia5-texto": "Un outil utilisé pour l’harmonisation énergétique, les libérations, les nettoyages et l’accompagnement de projets, intentions et espaces.",
             "link-saber-mais": "En savoir plus",
 
-            "cursos-etiqueta": "Formation",
+            "cursos-etiqueta": "Constellations Familiales",
             "cursos-titulo": "Cours et ateliers pour votre développement personnel",
-            "cursos-subtitulo" : "Spécialisé dans l’Eau",
-            "cursos-texto": "Des programmes en présentiel et en ligne conçus pour ceux qui souhaitent aller au-delà des séances individuelles — des outils pratiques de connaissance de soi, de régulation émotionnelle et de connexion spirituelle à appliquer au quotidien.",
+            "cursos-subtitulo": "Spécialisé dans l’Eau",
+            "cursos-texto": "Programmes en présentiel et en ligne conçus pour ceux qui souhaitent aller au-delà des séances individuelles — outils pratiques de connaissance de soi, de régulation émotionnelle et de connexion spirituelle à appliquer au quotidien.",
+
             "btn-ver-cursos": "Voir les cours disponibles",
+
+            "cursos-tag-1": "En ligne · 12 mois",
+            "cursos-tag-2": "Cours en direct et enregistrés",
+            "cursos-tag-3": "Début août 2026",
+
+            "cursos-aprende-titulo": "Ce que vous allez apprendre",
+
+            "aprende-1-titulo": "Écoute thérapeutique",
+            "aprende-1-texto": "Apprendre à écouter au-delà des mots, en identifiant ce que le consultant exprime consciemment et inconsciemment.",
+
+            "aprende-2-titulo": "Regard systémique profond",
+            "aprende-2-texto": "Comprendre comment les liens, loyautés invisibles et histoires familiales influencent les expériences présentes.",
+
+            "aprende-3-titulo": "États de l’être",
+            "aprende-3-texto": "Reconnaître quand une personne est en état Enfant, Victime, Juge ou Adulte, et comment l’accompagner vers la conscience et la responsabilité personnelle.",
+
+            "aprende-4-titulo": "Art de l’observation sans jugement",
+            "aprende-4-texto": "Développer une attitude intérieure basée sur la présence, le respect et l’observation phénoménologique.",
+
+            "aprende-5-titulo": "Phrases de guérison",
+            "aprende-5-texto": "Utiliser des mots qui facilitent les processus d’intégration, de reconnaissance et de transformation au sein du système familial.",
+
+            "aprende-6-titulo": "Thérapie transgénérationnelle",
+            "aprende-6-texto": "Intégrer des concepts tels que Projet Sens, Loyautés Invisibles, Mémoire Familiale et Cycles Biologiques Mémorisés.",
+
+            "aprende-7-titulo": "Cartes Sagesse en Spirale®",
+            "aprende-7-texto": "Utiliser des cartes thérapeutiques comme outil complémentaire dans les séances individuelles, autoconstellations et accompagnements.",
+
+            "aprende-8-titulo": "Constellations individuelles dans l’eau ✦",
+            "aprende-8-texto": "Méthodologie unique pour observer les dynamiques systémiques à travers le mouvement des éléments dans l’eau, élargissant la compréhension du champ et du processus thérapeutique.",
+
+            "aprende-9-titulo": "Actes symboliques et outils",
+            "aprende-9-texto": "Découvrir différents exercices et outils pour accompagner des processus au-delà de la constellation.",
+
+            "cursos-inclui-titulo": "Ce qui est inclus",
+
+            "inclui-1": "16 modules de formation",
+            "inclui-2": "Spécialisation en Constellations individuelles dans l’eau",
+            "inclui-3": "Matériel d’étude",
+            "inclui-4": "Pratiques supervisées",
+            "inclui-5": "Enregistrements des cours",
+            "inclui-6": "Groupe d’accompagnement",
+            "inclui-7": "Certificat de formation",
+
+            "cursos-invest-titulo": "Investissement",
+
+            "cursos-preco-mensal": "USD 60",
+            "cursos-preco-mensal-label": "par mois · 12 versements",
+
+            "cursos-ou": "ou",
+
+            "cursos-preco-total": "USD 690",
+            "cursos-preco-total-label": "paiement unique · économisez USD 30",
+
+            "cursos-pagamentos": "Moyens de paiement : PayPal, Wise, lien de paiement, Prex, Pix.",
+
+            "cursos-formato-1": "En ligne",
+            "cursos-formato-2": "12 mois",
+            "cursos-formato-3": "1h30 par semaine",
+            "cursos-formato-4": "Cours en direct et enregistrés",
+            "cursos-formato-5": "Début août 2026",
+
+            "btn-inscrever-curso": "Je m’inscris",
 
             "faq-titulo": "Questions fréquentes",
             "faq-subtitulo": "Trouvez les réponses à vos questions avant de commencer votre processus thérapeutique. Si vous ne trouvez pas ce que vous cherchez, contactez-moi directement.",
             "faq1-pergunta": "Ai-je besoin d'une orientation médicale pour commencer ?",
-            "faq1-resposta": "Non. Vous pouvez me contacter directement, sans aucune orientation médicale ou psychologique. Lors de la première séance, nous parlons de votre situation et définissons ensemble le meilleur chemin.",
+            "faq1-resposta": "Non. Vous pouvez me contacter directement, sans besoin d’indication médicale ou psychologique. Lors de la première séance, nous discutons de votre situation et définissons ensemble le meilleur chemin. Cependant, pour les constellations familiales, si vous êtes suivi par un psychiatre, il est nécessaire de consulter le professionnel qui vous accompagne afin de vérifier si vous êtes autorisé à le faire.",
             "faq2-pergunta": "Les séances sont-elles en ligne ou en présentiel ?",
             "faq2-resposta": "Je propose les deux modalités. Les séances en ligne se déroulent par appel vidéo, avec la même qualité de présence et d'accueil que les séances en présentiel.",
             "faq3-pergunta": "À quelle fréquence dois-je faire les séances ?",
@@ -465,15 +787,37 @@
 
             "depo-titulo": "Témoignages",
             "depo-subtitulo": "Des histoires réelles de personnes qui ont trouvé un nouveau regard sur elles-mêmes grâce à l'accompagnement thérapeutique.",
-            "depo-texto": "Les séances m'ont aidée à comprendre des schémas que je répétais depuis des années sans m'en rendre compte. Aujourd'hui je me sens plus légère, présente et en paix avec ma propre histoire.",
-            "depo-nome": "Mariana G.",
-            "depo-cargo": "En accompagnement depuis 2023",
+            
+            "depo-1-texto": "Anne, merci beaucoup. Tu ne sais pas à quel point tu m’aides. Cela fait des années que j’essaie de trouver des réponses comme celles-ci. Aujourd’hui, je souris un peu plus grâce à toi. Je vais le mettre en pratique ces jours-ci.",
+            "depo-1-nome": "Dante",
+            "depo-1-cargo": "2025",
+
+            "depo-2-texto": "Chère Anne, je voulais te remercier pour la chaleur que tu as partagée tout au long du cours, pour avoir partagé tes connaissances avec nous et pour ton soutien constant. Merci infiniment pour tout.",
+            "depo-2-nome": "Angie",
+            "depo-2-cargo": "2025",
+
+            "depo-3-texto": "Un workshop incroyable ! Beaucoup de changements de perspective, d’apprentissages et de nouveaux regards. C’était exactement ce dont j’avais besoin pour me retrouver. Un chemin de connaissance de soi. Gratitude Anne, j’ai adoré participer.",
+            "depo-3-nome": "Helen",
+            "depo-3-cargo": "2025",
+
+            "depo-4-texto": "Honnêtement, c’est la meilleure chose qui me soit arrivée cette année. Chaque thème abordé se reflétait dans la réalité, c’était incroyable de voir comment tout était connecté. Le processus de guérison que je traverse est merveilleux. J’ai retrouvé une relation différente avec mes parents. Je recommande totalement car cela m’a beaucoup aidée. J’ai pris conscience de beaucoup de choses que je ne savais pas. Et la manière dont tu guides, Anne, est très belle et pleine d’amour, tout se déroule naturellement. Gratitude du fond du cœur.",
+            "depo-4-nome": "Catalina",
+            "depo-4-cargo": "2025",
+
+            "depo-5-texto": "Je voulais dire que nos rencontres me manquent beaucoup ! C’était très beau de partager cette année avec vous, même virtuellement. Le workshop m’a montré que, même si le développement personnel est un processus individuel, il devient plus léger accompagné. Merci Anne et Helen de m’avoir accompagnée dans ce parcours. Je vous souhaite de belles célébrations et une belle fin d’année.",
+            "depo-5-nome": "Paula",
+            "depo-5-cargo": "2025",
+
+            "depo-6-texto": "Bonjour Anne ! La situation de mon amie que j’ai abordée lors de la dernière constellation s’est débloquée le jour même et le lendemain. Incroyable.",
+            "depo-6-nome": "Carol",
+            "depo-6-cargo": "2026",
 
             "agenda-titulo": "Prendre rendez-vous",
             "agenda-subtitulo": "Choisissez le jour et l'heure qui correspondent le mieux à votre emploi du temps.",
             "label-servico": "Service",
             "opt-servico-placeholder": "Sélectionnez un service",
             "opt-servico-5": "Séance d'Évaluation",
+            "opt-servico-6": "Cours",
             "label-data": "Date",
             "label-horario": "Horaire",
             "opt-horario-placeholder": "Sélectionnez un horaire",
@@ -611,7 +955,9 @@
 
             if (msgErro) msgErro.classList.remove("is-visivel");
 
-            const servico  = document.getElementById("campo-servico").value;
+            const servico = document
+                .querySelector("#campo-servico option:checked")
+                .textContent;
             const data     = document.getElementById("campo-data").value;
             const horario  = document.getElementById("campo-horario").value;
 
@@ -629,7 +975,7 @@
             const msg = mensagens[idiomaAtual] || mensagens.pt;
 
             // ⚠️ Substitua pelo número real com código do país (sem + nem espaços)
-            const numero = "5500000000000";
+            const numero = "555196704735";
 
             window.open(
                 `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`,
