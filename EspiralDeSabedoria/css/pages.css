@@ -148,12 +148,12 @@
     .sobre__grid {
         grid-template-columns: 1fr;
         justify-items: center;
+        align-items: center;
     }
 
     .sobre__imagem{
         display: flex;
         justify-content: center;
-        align-content: center;
     }
 
     .sobre__imagem .imagem-moldura {
@@ -161,6 +161,17 @@
         height: 500px;
     }
 }
+
+@media (max-width: 580px) {
+    .sobre__grid {
+        justify-content: center;
+    }
+
+    .sobre__texto {
+        max-width: 90%;
+    }
+}
+
 
 @media (max-width: 480px) {
     #sobre {
@@ -356,6 +367,7 @@
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     background-color: var(--color-surface);
+    margin-bottom: var(--space-xl);
 }
 
 .cursos__precos {
@@ -487,6 +499,14 @@
     .cursos__imagem .imagem-moldura{
         height: 400px;
         width: 550px;
+    }
+
+    .texto2 {
+        grid-row: 2;
+    }
+
+    .imagem2{
+        grid-row: 1;
     }
 }
 
