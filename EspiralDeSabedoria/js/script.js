@@ -27,12 +27,16 @@ if ("IntersectionObserver" in window) {
             });
         },
         {
-            threshold: 0.1,
-            rootMargin: "0px 0px -10% 0px"
+            root: null,
+            threshold: 0,
+            rootMargin: "0px 0px -20% 0px"
         }
     );
 
-    containers.forEach((el) => observer.observe(el));
+    containers.forEach((el) => {
+        el.classList.remove("active"); // garante estado inicial
+        observer.observe(el);
+    });
 } else {
     containers.forEach((el) => el.classList.add("active"));
 }
