@@ -18,23 +18,24 @@ const containers = document.querySelectorAll(".container");
 
 if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-        if (entry.isIntersecting || entry.intersectionRatio >= 0.10) {
-            entry.target.classList.add("active");
-            observer.unobserve(entry.target);
+        (entries, obs) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                    obs.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.1,
+            rootMargin: "0px 0px -10% 0px"
         }
-        });
-    },
-    { threshold: 0.10 },
     );
 
     containers.forEach((el) => observer.observe(el));
 } else {
-    // Fallback: navegadores sem suporte mostram o conteúdo direto
     containers.forEach((el) => el.classList.add("active"));
 }
-
 /* ----------------------------------------------------------------
     2. Cabeçalho fixo com sombra ao rolar
     ---------------------------------------------------------------- */
