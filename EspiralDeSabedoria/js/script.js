@@ -279,8 +279,7 @@ const dicionario = {
 
     "btn-inscrever-curso": "Quero me inscrever",
 
-    "inscricao-curso1": "Olá Anne, gostaria de me inscrever no curso de Constelações Familiares com especialidade na água.",
-    "inscricao-curso2": "Olá Anne, gostaria de me increver no curso de especialização em Contelações Familiares na água",
+    // Curso 2 //
 
     "curso2-etiqueta": "Formação Especializada",
     "curso2-subtitulo": "Constelações Familiares na Água",
@@ -350,6 +349,68 @@ const dicionario = {
     "curso2-formato-5": "Início 22 de agosto de 2026",
 
     "curso2-btn-inscrever": "Quero me inscrever",
+
+    "curso3-etiqueta": "Formação Terapêutica",
+
+    // Curso 3 //
+
+    "curso3-subtitulo": "Tarô Evolutivo Transgeracional e Sistêmico",
+
+    "curso3-texto": "Um curso para autoconhecimento e uso do tarô de forma terapêutica. Você irá aprender a utilizar o tarô como ferramenta de evolução pessoal e do consultante, integrando visão sistêmica, constelações familiares e leitura transgeracional da árvore genealógica.",
+
+    "curso3-tag-1": "Online · 4 meses",
+    "curso3-tag-2": "Início 1 de agosto de 2026",
+    "curso3-tag-3": "Tarô + sistêmico + constelações",
+
+    "curso3-btn-ver": "Ver detalhes e inscrição",
+
+    "curso3-aprende-titulo": "O que você vai aprender",
+
+    "curso3-aprende-1-titulo": "Tarô terapêutico aplicado",
+    "curso3-aprende-1-texto": "Compreender o tarô como ferramenta de autoconhecimento e leitura terapêutica para evolução pessoal e do consultante.",
+
+    "curso3-aprende-2-titulo": "Leitura sistêmica do tarô",
+    "curso3-aprende-2-texto": "Interpretar o tarô sob a ótica da terapia sistêmica, identificando padrões emocionais e dinâmicas familiares.",
+
+    "curso3-aprende-3-titulo": "Tarô transgeracional",
+    "curso3-aprende-3-texto": "Explorar o tarô como ferramenta de acesso à árvore genealógica e padrões herdados entre gerações.",
+
+    "curso3-aprende-4-titulo": "Integração com constelações familiares",
+    "curso3-aprende-4-texto": "Aplicar princípios das constelações familiares para ampliar a leitura dos sistemas familiares.",
+
+    "curso3-aprende-5-titulo": "Prática vivencial",
+    "curso3-aprende-5-texto": "Vivenciar o tarô como prática ativa, integrando teoria, exercícios e experiências terapêuticas.",
+
+    "curso3-aprende-6-titulo": "Uso ético e terapêutico",
+    "curso3-aprende-6-texto": "Desenvolver responsabilidade e sensibilidade no uso do tarô como ferramenta terapêutica.",
+
+    "curso3-inclui-titulo": "O que está incluído",
+
+    "curso3-inclui-1": "Curso com abordagem terapêutica e vivencial",
+    "curso3-inclui-2": "Integração do tarô com terapia sistêmica e constelações familiares",
+    "curso3-inclui-3": "Exercícios práticos ao longo do curso",
+    "curso3-inclui-4": "Exploração da árvore genealógica e padrões transgeracionais",
+    "curso3-inclui-5": "Material de apoio e práticas guiadas",
+
+    "curso3-invest-titulo": "Investimento",
+
+    "curso3-preco-mensal": "USD 60",
+    "curso3-preco-mensal-label": "por mês",
+
+    "curso3-ou": "ou",
+
+    "curso3-preco-total": "USD 225",
+    "curso3-preco-total-label": "formação completa",
+
+    "curso3-pagamentos": "Formas de pagamento: PayPal, Wise, Link de pagamento, Pix.",
+
+    "curso3-formato-1": "Online",
+    "curso3-formato-2": "4 meses",
+    "curso3-formato-3": "Início 1 de agosto de 2026",
+
+    "inscricao-curso1": "Olá Anne, gostaria de me inscrever no curso de Constelações Familiares com especialidade na água.",
+    "inscricao-curso2": "Olá Anne, gostaria de me increver no curso de especialização em Contelações Familiares na água",
+    "inscricao-curso3" : "Olá Anne, eu gostaria de me inscrever para o curso de Tarô Evolutivo Transgeracional.",
 
     "faq-titulo": "Perguntas frequentes",
     "faq-subtitulo":
@@ -567,6 +628,8 @@ const dicionario = {
 
     "btn-inscrever-curso": "Quiero inscribirme",
 
+    // Curso 2 //
+
     "curso2-etiqueta": "Formación especializada",
     "curso2-subtitulo": "Constelaciones Familiares en el Agua",
     "curso2-texto": "Una formación práctica para consteladores y terapeutas que desean profundizar su práctica a través del trabajo con constelaciones en el agua, desarrollando escucha sistémica, percepción del campo y seguridad en la facilitación.",
@@ -636,8 +699,67 @@ const dicionario = {
 
     "curso2-btn-inscrever": "Quiero inscribirme",
 
+    // Curso 3 //
+
+    "curso3-etiqueta": "Formación Terapéutica",
+
+    "curso3-subtitulo": "Tarot Evolutivo Transgeneracional y Sistémico",
+
+    "curso3-texto": "Un curso para el autoconocimiento y el uso del tarot de manera terapéutica. Aprenderás a utilizar el tarot como herramienta de evolución personal y del consultante, integrando la mirada sistémica, las constelaciones familiares y la lectura transgeneracional del árbol genealógico.",
+
+    "curso3-tag-1": "Online · 4 meses",
+    "curso3-tag-2": "Inicio 1 de agosto de 2026",
+    "curso3-tag-3": "Tarot + sistémico + constelaciones",
+
+    "curso3-btn-ver": "Ver detalles e inscripción",
+
+    "curso3-aprende-titulo": "Lo que aprenderás",
+
+    "curso3-aprende-1-titulo": "Tarot terapéutico aplicado",
+    "curso3-aprende-1-texto": "Comprender el tarot como herramienta de autoconocimiento y lectura terapéutica para la evolución personal y del consultante.",
+
+    "curso3-aprende-2-titulo": "Lectura sistémica del tarot",
+    "curso3-aprende-2-texto": "Interpretar el tarot desde la mirada de la terapia sistémica, identificando patrones emocionales y dinámicas familiares.",
+
+    "curso3-aprende-3-titulo": "Tarot transgeneracional",
+    "curso3-aprende-3-texto": "Explorar el tarot como herramienta de acceso al árbol genealógico y patrones heredados entre generaciones.",
+
+    "curso3-aprende-4-titulo": "Integración con constelaciones familiares",
+    "curso3-aprende-4-texto": "Aplicar principios de las constelaciones familiares para ampliar la comprensión de los sistemas familiares.",
+
+    "curso3-aprende-5-titulo": "Práctica vivencial",
+    "curso3-aprende-5-texto": "Vivir el tarot como práctica activa, integrando teoría, ejercicios y experiencias terapéuticas.",
+
+    "curso3-aprende-6-titulo": "Uso ético y terapéutico",
+    "curso3-aprende-6-texto": "Desarrollar responsabilidad y sensibilidad en el uso del tarot como herramienta terapéutica.",
+
+    "curso3-inclui-titulo": "Qué incluye",
+
+    "curso3-inclui-1": "Curso con enfoque terapéutico y vivencial",
+    "curso3-inclui-2": "Integración del tarot con terapia sistémica y constelaciones familiares",
+    "curso3-inclui-3": "Ejercicios prácticos durante el curso",
+    "curso3-inclui-4": "Exploración del árbol genealógico y patrones transgeneracionales",
+    "curso3-inclui-5": "Material de apoyo y prácticas guiadas",
+
+    "curso3-invest-titulo": "Inversión",
+
+    "curso3-preco-mensal": "USD 60",
+    "curso3-preco-mensal-label": "por mes",
+
+    "curso3-ou": "o",
+
+    "curso3-preco-total": "USD 225",
+    "curso3-preco-total-label": "formación completa",
+
+    "curso3-pagamentos": "Formas de pago: PayPal, Wise, enlace de pago, Pix.",
+
+    "curso3-formato-1": "Online",
+    "curso3-formato-2": "4 meses",
+    "curso3-formato-3": "Inicio 1 de agosto de 2026",
+
     "inscricao-curso1": "Hola Anne, me gustaría inscribirme en el curso de Constelaciones Familiares con especialidad en el agua.",
     "inscricao-curso2": "Hola Anne, me gustaría inscribirme en el curso de especialización en Constelaciones Familiares en el Agua.",
+    "inscricao-curso3": "Hola Anne, me gustaría inscribirme en el curso de Tarot Evolutivo Transgeneracional y Sistémico",
 
     "faq-titulo": "Preguntas frecuentes",
     "faq-subtitulo":
@@ -924,8 +1046,65 @@ const dicionario = {
 
     "curso2-btn-inscrever": "Enroll now",
 
+    "curso3-etiqueta": "Therapeutic Training",
+
+    "curso3-subtitulo": "Evolutionary Transgenerational and Systemic Tarot",
+
+    "curso3-texto": "A course focused on self-knowledge and the therapeutic use of tarot. You will learn to use tarot as a tool for personal growth and for supporting the consultant, integrating a systemic perspective, family constellations and transgenerational reading of the family tree.",
+
+    "curso3-tag-1": "Online · 4 months",
+    "curso3-tag-2": "Start August 1, 2026",
+    "curso3-tag-3": "Tarot + systemic approach + constellations",
+
+    "curso3-btn-ver": "View details and enrollment",
+
+    "curso3-aprende-titulo": "What you will learn",
+
+    "curso3-aprende-1-titulo": "Applied therapeutic tarot",
+    "curso3-aprende-1-texto": "Understand tarot as a tool for self-knowledge and therapeutic reading for personal growth and the development of the consultant.",
+
+    "curso3-aprende-2-titulo": "Systemic tarot reading",
+    "curso3-aprende-2-texto": "Interpret tarot from a systemic therapy perspective, identifying emotional patterns and family dynamics.",
+
+    "curso3-aprende-3-titulo": "Transgenerational tarot",
+    "curso3-aprende-3-texto": "Explore tarot as a tool for accessing the family tree and inherited patterns across generations.",
+
+    "curso3-aprende-4-titulo": "Integration with family constellations",
+    "curso3-aprende-4-texto": "Apply principles of family constellations to expand the understanding of family systems.",
+
+    "curso3-aprende-5-titulo": "Experiential practice",
+    "curso3-aprende-5-texto": "Experience tarot as an active practice, integrating theory, exercises and therapeutic experiences.",
+
+    "curso3-aprende-6-titulo": "Ethical and therapeutic use",
+    "curso3-aprende-6-texto": "Develop responsibility and sensitivity in using tarot as a therapeutic tool.",
+
+    "curso3-inclui-titulo": "What is included",
+
+    "curso3-inclui-1": "Course with a therapeutic and experiential approach",
+    "curso3-inclui-2": "Integration of tarot with systemic therapy and family constellations",
+    "curso3-inclui-3": "Practical exercises throughout the course",
+    "curso3-inclui-4": "Exploration of the family tree and transgenerational patterns",
+    "curso3-inclui-5": "Support materials and guided practices",
+
+    "curso3-invest-titulo": "Investment",
+
+    "curso3-preco-mensal": "USD 60",
+    "curso3-preco-mensal-label": "per month",
+
+    "curso3-ou": "or",
+
+    "curso3-preco-total": "USD 225",
+    "curso3-preco-total-label": "complete training",
+
+    "curso3-pagamentos": "Payment methods: PayPal, Wise, payment link, Pix.",
+
+    "curso3-formato-1": "Online",
+    "curso3-formato-2": "4 months",
+    "curso3-formato-3": "Start August 1, 2026",
+
     "inscricao-curso1": "Hello Anne, I would like to enroll in the Family Constellations course specialized in water.",
     "inscricao-curso2": "Hello Anne, I would like to enroll in the specialization course in Family Constellations in Water.",
+    "inscricao-curso3": "Hello Anne, I would like to enroll in the Evolutionary Transgenerational and Systemic Tarot course",
 
     "faq-titulo": "Frequently asked questions",
     "faq-subtitulo":
@@ -1209,8 +1388,65 @@ const dicionario = {
 
     "curso2-btn-inscrever": "Je veux m’inscrire",
 
+    "curso3-etiqueta": "Formation Thérapeutique",
+
+    "curso3-subtitulo": "Tarot Évolutif Transgénérationnel et Systémique",
+
+    "curso3-texto": "Un cours dédié à la connaissance de soi et à l'utilisation du tarot de manière thérapeutique. Vous apprendrez à utiliser le tarot comme un outil d'évolution personnelle et d'accompagnement du consultant, en intégrant une approche systémique, les constellations familiales et la lecture transgénérationnelle de l'arbre généalogique.",
+
+    "curso3-tag-1": "En ligne · 4 mois",
+    "curso3-tag-2": "Début le 1er août 2026",
+    "curso3-tag-3": "Tarot + approche systémique + constellations",
+
+    "curso3-btn-ver": "Voir les détails et l'inscription",
+
+    "curso3-aprende-titulo": "Ce que vous allez apprendre",
+
+    "curso3-aprende-1-titulo": "Tarot thérapeutique appliqué",
+    "curso3-aprende-1-texto": "Comprendre le tarot comme un outil de connaissance de soi et de lecture thérapeutique pour l'évolution personnelle et celle du consultant.",
+
+    "curso3-aprende-2-titulo": "Lecture systémique du tarot",
+    "curso3-aprende-2-texto": "Interpréter le tarot selon une approche de thérapie systémique, en identifiant les schémas émotionnels et les dynamiques familiales.",
+
+    "curso3-aprende-3-titulo": "Tarot transgénérationnel",
+    "curso3-aprende-3-texto": "Explorer le tarot comme un outil d'accès à l'arbre généalogique et aux schémas hérités entre générations.",
+
+    "curso3-aprende-4-titulo": "Intégration avec les constellations familiales",
+    "curso3-aprende-4-texto": "Appliquer les principes des constellations familiales pour approfondir la compréhension des systèmes familiaux.",
+
+    "curso3-aprende-5-titulo": "Pratique expérientielle",
+    "curso3-aprende-5-texto": "Expérimenter le tarot comme une pratique active intégrant théorie, exercices et expériences thérapeutiques.",
+
+    "curso3-aprende-6-titulo": "Usage éthique et thérapeutique",
+    "curso3-aprende-6-texto": "Développer responsabilité et sensibilité dans l'utilisation du tarot comme outil thérapeutique.",
+
+    "curso3-inclui-titulo": "Ce qui est inclus",
+
+    "curso3-inclui-1": "Formation avec une approche thérapeutique et expérientielle",
+    "curso3-inclui-2": "Intégration du tarot avec la thérapie systémique et les constellations familiales",
+    "curso3-inclui-3": "Exercices pratiques pendant la formation",
+    "curso3-inclui-4": "Exploration de l'arbre généalogique et des schémas transgénérationnels",
+    "curso3-inclui-5": "Supports d'accompagnement et pratiques guidées",
+
+    "curso3-invest-titulo": "Investissement",
+
+    "curso3-preco-mensal": "USD 60",
+    "curso3-preco-mensal-label": "par mois",
+
+    "curso3-ou": "ou",
+
+    "curso3-preco-total": "USD 225",
+    "curso3-preco-total-label": "formation complète",
+
+    "curso3-pagamentos": "Modes de paiement : PayPal, Wise, lien de paiement, Pix.",
+
+    "curso3-formato-1": "En ligne",
+    "curso3-formato-2": "4 mois",
+    "curso3-formato-3": "Début le 1er août 2026",
+
     "inscricao-curso1": "Bonjour Anne, je voudrais m'inscrire au cours de Constellations Familiales avec spécialisation dans l'eau.",
     "inscricao-curso2": "Bonjour Anne, je souhaiterais m'inscrire à la formation spécialisée en Constellations Familiales dans l'Eau.",
+    "inscricao-curso3": "Bonjour Anne, j'aimerais m'inscrire au cours de Tarot Évolutif Transgénérationnel et Systémique",
 
     "faq-titulo": "Questions fréquentes",
     "faq-subtitulo":

@@ -508,6 +508,14 @@
     .imagem2{
         grid-row: 1;
     }
+
+    .texto3 {
+        grid-row: 2;
+    }
+
+    .imagem3 {
+        grid-row: 1;
+    }
 }
 
 @media (max-width: 600px) {
