@@ -408,9 +408,60 @@ const dicionario = {
     "curso3-formato-2": "4 meses",
     "curso3-formato-3": "Início 1 de agosto de 2026",
 
+    // Curso 4 //
+
+    "curso4-etiqueta": "Formação Espiritual",
+    "curso4-subtitulo": "Abertura de Registros Akáshicos",
+    "curso4-texto": "Uma formação em três níveis para desenvolver a conexão com os Registros Akáshicos, aprofundando o acesso à própria informação, o acompanhamento de outras pessoas e a preparação para iniciar novos praticantes.",
+
+    "curso4-tag-1": "Formação em 3 níveis",
+    "curso4-tag-2": "Desenvolvimento espiritual e intuitivo",
+    "curso4-tag-3": "Datas e valores em breve",
+
+    "curso4-btn-ver": "Ver detalhes e inscrição",
+
+    "curso4-aprende-titulo": "O que você vai aprender",
+
+    "curso4-aprende-1-titulo": "Nível 1 · Registros pessoais",
+    "curso4-aprende-1-texto": "Aprender a acessar seus próprios Registros Akáshicos e desenvolver conexão com sua consciência superior, mestres e guias.",
+
+    "curso4-aprende-2-titulo": "Nível 2 · Registros de outras pessoas",
+    "curso4-aprende-2-texto": "Desenvolver a capacidade de realizar a abertura de registros para outras pessoas, ampliando a prática e a conexão.",
+
+    "curso4-aprende-3-titulo": "Nível 3 · Formação de novos praticantes",
+    "curso4-aprende-3-texto": "Aprender o processo para iniciar outras pessoas na abertura de Registros Akáshicos.",
+
+    "curso4-aprende-4-titulo": "Conexão e percepção",
+    "curso4-aprende-4-texto": "Desenvolver percepção e conexão com informações sutis através da prática dos registros.",
+
+    "curso4-aprende-5-titulo": "Consciência superior",
+    "curso4-aprende-5-texto": "Aprofundar a conexão espiritual e o contato com uma consciência ampliada.",
+
+    "curso4-aprende-6-titulo": "Caminho dos Registros Akáshicos ✦",
+    "curso4-aprende-6-texto": "Uma jornada progressiva de aprendizado, conexão e aprofundamento espiritual.",
+
+    "curso4-inclui-titulo": "O que está incluído",
+    "curso4-inclui-1": "Formação estruturada em três níveis",
+    "curso4-inclui-2": "Práticas de abertura dos Registros Akáshicos",
+    "curso4-inclui-3": "Desenvolvimento da conexão pessoal",
+    "curso4-inclui-4": "Aprendizado para atendimento de outras pessoas",
+    "curso4-inclui-5": "Preparação para iniciar novos praticantes",
+
+    "curso4-invest-titulo": "Investimento",
+    "curso4-preco": "A definir",
+    "curso4-preco-label": "informações em breve",
+    "curso4-pagamentos": "Formas de pagamento serão informadas em breve.",
+
+    "curso4-formato-1": "Online",
+    "curso4-formato-2": "3 níveis",
+    "curso4-formato-3": "Início a definir",
+
+    "btn-inscrever-curso": "Quero me inscrever",
+
     "inscricao-curso1": "Olá Anne, gostaria de me inscrever no curso de Constelações Familiares com especialidade na água.",
     "inscricao-curso2": "Olá Anne, gostaria de me increver no curso de especialização em Contelações Familiares na água",
-    "inscricao-curso3" : "Olá Anne, eu gostaria de me inscrever para o curso de Tarô Evolutivo Transgeracional.",
+    "inscricao-curso3": "Olá Anne, eu gostaria de me inscrever para o curso de Tarô Evolutivo Transgeracional.",
+    "inscricao-curso4": "Olá Anne, eu gostaria de mais informações sobre o curso de Abertura de Registros Akáshicos",
 
     "faq-titulo": "Perguntas frequentes",
     "faq-subtitulo":
@@ -757,9 +808,60 @@ const dicionario = {
     "curso3-formato-2": "4 meses",
     "curso3-formato-3": "Inicio 1 de agosto de 2026",
 
+    // Curso 4 //
+    
+    "curso4-etiqueta": "Formación Espiritual",
+    "curso4-subtitulo": "Apertura de Registros Akáshicos",
+    "curso4-texto": "Una formación en tres niveles para desarrollar la conexión con los Registros Akáshicos, profundizando el acceso a la propia información, el acompañamiento de otras personas y la preparación para iniciar nuevos practicantes.",
+
+    "curso4-tag-1": "Formación en 3 niveles",
+    "curso4-tag-2": "Desarrollo espiritual e intuitivo",
+    "curso4-tag-3": "Fechas y valores próximamente",
+
+    "curso4-btn-ver": "Ver detalles e inscripción",
+
+    "curso4-aprende-titulo": "Lo que vas a aprender",
+
+    "curso4-aprende-1-titulo": "Nivel 1 · Registros personales",
+    "curso4-aprende-1-texto": "Aprender a acceder a tus propios Registros Akáshicos y desarrollar conexión con tu conciencia superior, maestros y guías.",
+
+    "curso4-aprende-2-titulo": "Nivel 2 · Registros de otras personas",
+    "curso4-aprende-2-texto": "Desarrollar la capacidad de realizar la apertura de registros para otras personas, ampliando la práctica y la conexión.",
+
+    "curso4-aprende-3-titulo": "Nivel 3 · Formación de nuevos practicantes",
+    "curso4-aprende-3-texto": "Aprender el proceso para iniciar a otras personas en la apertura de Registros Akáshicos.",
+
+    "curso4-aprende-4-titulo": "Conexión y percepción",
+    "curso4-aprende-4-texto": "Desarrollar la percepción y conexión con información sutil a través de la práctica de los registros.",
+
+    "curso4-aprende-5-titulo": "Conciencia superior",
+    "curso4-aprende-5-texto": "Profundizar la conexión espiritual y el contacto con una conciencia ampliada.",
+
+    "curso4-aprende-6-titulo": "Camino de los Registros Akáshicos ✦",
+    "curso4-aprende-6-texto": "Un viaje progresivo de aprendizaje, conexión y profundización espiritual.",
+
+    "curso4-inclui-titulo": "Qué incluye",
+    "curso4-inclui-1": "Formación estructurada en tres niveles",
+    "curso4-inclui-2": "Prácticas de apertura de los Registros Akáshicos",
+    "curso4-inclui-3": "Desarrollo de la conexión personal",
+    "curso4-inclui-4": "Aprendizaje para atender a otras personas",
+    "curso4-inclui-5": "Preparación para iniciar nuevos practicantes",
+
+    "curso4-invest-titulo": "Inversión",
+    "curso4-preco": "Por definir",
+    "curso4-preco-label": "información próximamente",
+    "curso4-pagamentos": "Las formas de pago se informarán próximamente.",
+
+    "curso4-formato-1": "Online",
+    "curso4-formato-2": "3 niveles",
+    "curso4-formato-3": "Inicio por definir",
+
+    "btn-inscrever-curso": "Quiero inscribirme",
+
     "inscricao-curso1": "Hola Anne, me gustaría inscribirme en el curso de Constelaciones Familiares con especialidad en el agua.",
     "inscricao-curso2": "Hola Anne, me gustaría inscribirme en el curso de especialización en Constelaciones Familiares en el Agua.",
     "inscricao-curso3": "Hola Anne, me gustaría inscribirme en el curso de Tarot Evolutivo Transgeneracional y Sistémico",
+    "inscricao-curso4": "Hola Anne, me gustaría más información sobre el curso de Apertura de Registros Akáshicos",
 
     "faq-titulo": "Preguntas frecuentes",
     "faq-subtitulo":
@@ -1102,9 +1204,60 @@ const dicionario = {
     "curso3-formato-2": "4 months",
     "curso3-formato-3": "Start August 1, 2026",
 
+    // Curso 4 //
+
+    "curso4-etiqueta": "Spiritual Training",
+    "curso4-subtitulo": "Akashic Records Opening",
+    "curso4-texto": "A three-level training designed to develop connection with the Akashic Records, deepening access to personal information, supporting others, and preparing new practitioners.",
+
+    "curso4-tag-1": "3-level training",
+    "curso4-tag-2": "Spiritual and intuitive development",
+    "curso4-tag-3": "Dates and pricing coming soon",
+
+    "curso4-btn-ver": "See details and enrollment",
+
+    "curso4-aprende-titulo": "What you will learn",
+
+    "curso4-aprende-1-titulo": "Level 1 · Personal Records",
+    "curso4-aprende-1-texto": "Learn to access your own Akashic Records and develop connection with your higher consciousness, masters, and guides.",
+
+    "curso4-aprende-2-titulo": "Level 2 · Other people's Records",
+    "curso4-aprende-2-texto": "Develop the ability to open Akashic Records for other people, expanding practice and connection.",
+
+    "curso4-aprende-3-titulo": "Level 3 · Training new practitioners",
+    "curso4-aprende-3-texto": "Learn the process to initiate others into Akashic Records opening.",
+
+    "curso4-aprende-4-titulo": "Connection and perception",
+    "curso4-aprende-4-texto": "Develop perception and connection with subtle information through record practice.",
+
+    "curso4-aprende-5-titulo": "Higher consciousness",
+    "curso4-aprende-5-texto": "Deepen spiritual connection and contact with expanded consciousness.",
+
+    "curso4-aprende-6-titulo": "Path of the Akashic Records ✦",
+    "curso4-aprende-6-texto": "A progressive journey of learning, connection, and spiritual deepening.",
+
+    "curso4-inclui-titulo": "What’s included",
+    "curso4-inclui-1": "Structured training in three levels",
+    "curso4-inclui-2": "Akashic Records opening practices",
+    "curso4-inclui-3": "Personal connection development",
+    "curso4-inclui-4": "Training for working with others",
+    "curso4-inclui-5": "Preparation to initiate new practitioners",
+
+    "curso4-invest-titulo": "Investment",
+    "curso4-preco": "To be defined",
+    "curso4-preco-label": "more information soon",
+    "curso4-pagamentos": "Payment methods will be announced soon.",
+
+    "curso4-formato-1": "Online",
+    "curso4-formato-2": "3 levels",
+    "curso4-formato-3": "Start to be defined",
+
+    "btn-inscrever-curso": "I want to enroll",
+
     "inscricao-curso1": "Hello Anne, I would like to enroll in the Family Constellations course specialized in water.",
     "inscricao-curso2": "Hello Anne, I would like to enroll in the specialization course in Family Constellations in Water.",
     "inscricao-curso3": "Hello Anne, I would like to enroll in the Evolutionary Transgenerational and Systemic Tarot course",
+    "inscricao-curso4": "Hello Anne, I would like more information about the Akashic Records Opening course",
 
     "faq-titulo": "Frequently asked questions",
     "faq-subtitulo":
@@ -1444,9 +1597,60 @@ const dicionario = {
     "curso3-formato-2": "4 mois",
     "curso3-formato-3": "Début le 1er août 2026",
 
+    // Curso 4 //
+
+    "curso4-etiqueta": "Formation Spirituelle",
+    "curso4-subtitulo": "Ouverture des Archives Akashiques",
+    "curso4-texto": "Une formation en trois niveaux pour développer la connexion aux Archives Akashiques, approfondissant l’accès à l’information personnelle, l’accompagnement d’autres personnes et la préparation de nouveaux praticiens.",
+
+    "curso4-tag-1": "Formation en 3 niveaux",
+    "curso4-tag-2": "Développement spirituel et intuitif",
+    "curso4-tag-3": "Dates et tarifs bientôt disponibles",
+
+    "curso4-btn-ver": "Voir les détails et inscription",
+
+    "curso4-aprende-titulo": "Ce que vous allez apprendre",
+
+    "curso4-aprende-1-titulo": "Niveau 1 · Archives personnelles",
+    "curso4-aprende-1-texto": "Apprendre à accéder à vos propres Archives Akashiques et développer la connexion avec votre conscience supérieure, maîtres et guides.",
+
+    "curso4-aprende-2-titulo": "Niveau 2 · Archives d’autres personnes",
+    "curso4-aprende-2-texto": "Développer la capacité d’ouvrir les Archives Akashiques pour d’autres personnes, élargissant la pratique et la connexion.",
+
+    "curso4-aprende-3-titulo": "Niveau 3 · Formation de nouveaux praticiens",
+    "curso4-aprende-3-texto": "Apprendre le processus pour initier d’autres personnes à l’ouverture des Archives Akashiques.",
+
+    "curso4-aprende-4-titulo": "Connexion et perception",
+    "curso4-aprende-4-texto": "Développer la perception et la connexion aux informations subtiles à travers la pratique des archives.",
+
+    "curso4-aprende-5-titulo": "Conscience supérieure",
+    "curso4-aprende-5-texto": "Approfondir la connexion spirituelle et le contact avec une conscience élargie.",
+
+    "curso4-aprende-6-titulo": "Chemin des Archives Akashiques ✦",
+    "curso4-aprende-6-texto": "Un parcours progressif d’apprentissage, de connexion et d’approfondissement spirituel.",
+
+    "curso4-inclui-titulo": "Ce qui est inclus",
+    "curso4-inclui-1": "Formation structurée en trois niveaux",
+    "curso4-inclui-2": "Pratiques d’ouverture des Archives Akashiques",
+    "curso4-inclui-3": "Développement de la connexion personnelle",
+    "curso4-inclui-4": "Apprentissage pour accompagner d’autres personnes",
+    "curso4-inclui-5": "Préparation à former de nouveaux praticiens",
+
+    "curso4-invest-titulo": "Investissement",
+    "curso4-preco": "À définir",
+    "curso4-preco-label": "informations à venir",
+    "curso4-pagamentos": "Les modalités de paiement seront communiquées prochainement.",
+
+    "curso4-formato-1": "En ligne",
+    "curso4-formato-2": "3 niveaux",
+    "curso4-formato-3": "Début à définir",
+
+    "btn-inscrever-curso": "Je veux m’inscrire",
+
     "inscricao-curso1": "Bonjour Anne, je voudrais m'inscrire au cours de Constellations Familiales avec spécialisation dans l'eau.",
     "inscricao-curso2": "Bonjour Anne, je souhaiterais m'inscrire à la formation spécialisée en Constellations Familiales dans l'Eau.",
     "inscricao-curso3": "Bonjour Anne, j'aimerais m'inscrire au cours de Tarot Évolutif Transgénérationnel et Systémique",
+    "inscricao-curso4": "Bonjour Anne, je souhaiterais avoir plus d'informations sur la formation d’ouverture des Archives Akashiques",
 
     "faq-titulo": "Questions fréquentes",
     "faq-subtitulo":

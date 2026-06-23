@@ -516,6 +516,10 @@
     .imagem3 {
         grid-row: 1;
     }
+
+    .cursos__texto .botao {
+        align-self: center;
+    }
 }
 
 @media (max-width: 600px) {
